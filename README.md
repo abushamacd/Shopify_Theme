@@ -30,3 +30,68 @@ curl -s https://shopify.dev/themekit.py | sudo python3
 ```bash
 theme new --password=[your_password] --store="[your_store.myshopify.com]" --name=[theme_name]
 ```
+
+**Get Existing theme id**
+
+```bash
+theme get --list --password=[your-password] --store="[your-store.myshopify.com]"
+--name=[theme_name]
+```
+
+**Get Existing theme**
+
+```bash
+theme get --password=[your-password] --store="[your-store.myshopify.com]" --themeid=[your-theme-id]
+```
+
+**Theme deploy**
+
+```bash
+theme deploy
+```
+
+**Theme upload on live edit**
+
+```bash
+theme watch --allow-live
+```
+
+**Add assets files**
+<br>
+All assets file in assets folder directly
+
+CSS
+
+```bash
+{{ 'application.css' | asset_url | stylesheet_tag }}
+```
+
+or
+
+```bash
+<link rel="preload" href="{{ 'your_css_file_name.css' | asset_url }}" as="style">
+```
+
+JS
+
+```bash
+{{ 'application.js' | asset_url | script_tag }}
+```
+
+or
+
+```bash
+<link rel="preload" href="{{ 'your_js_file_name.js' | asset_url }}" as="script">
+```
+
+CSS by CDN
+
+```bash
+
+```
+
+JS by CDN
+
+```bash
+<script src="https://cdn.tailwindcss.com"></script>
+```
