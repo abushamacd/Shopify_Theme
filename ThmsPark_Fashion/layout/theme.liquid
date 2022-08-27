@@ -11,6 +11,8 @@
   {{ content_for_header }}
   <!-- Header hook for plugins -->
   {{ 'application.css' | asset_url | stylesheet_tag }}
+  {{ 'jquery-1.12.4.min.js' | asset_url | script_tag }}
+  {{ 'jquery.slicknav.min.js' | asset_url | script_tag }}
   {{ 'application.js' | asset_url | script_tag }}
 
   <!-- Daisui -->
@@ -29,6 +31,8 @@
 <body>
   {% section 'header' %}
 
+  <div class="h-96"></div>
+  <div class="h-96"></div>
 
   {% for link in linklists.main-menu.links %}
   {% assign child_list_handle = link.title | handleize %}
