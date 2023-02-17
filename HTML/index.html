@@ -8,6 +8,9 @@
     <title>ThmsPark</title>
     <!-- CSS File -->
     <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
 </head>
 
 <body>
@@ -25,7 +28,7 @@
         </div>
         <div class="header-main md:px-6 px-2">
             <div class="logo">
-                <a href=""><img src="./assets/images/logo.png" width="200" alt=""></a>
+                <a href=""><img src="./assets/images/logo.png" class="md:w-[200px] w-[160px]" alt=""></a>
             </div>
 
             <div class="menu-overlay">
@@ -36,7 +39,7 @@
                     <div class="close-nav-menu ">
                         <i class="hover:text-primary duration-300 text-[24px] fa-solid fa-xmark"></i>
                     </div>
-                    <div class="close-nav-menu">
+                    <div class="close-nav-menu search-btn">
                         <i class="mr-2 hover:text-primary duration-300 text-[24px] fa-solid fa-magnifying-glass"></i>
                     </div>
                 </div>
@@ -76,8 +79,8 @@
             <!-- navigation menu end -->
             <div class="header_action flex md:mt-0 mt-[10px]">
                 <ul class="icons flex items-center gap-4">
-                    <li class="icon hidden md:block"><a href=""><i
-                                class="hover:text-primary duration-300 text-[24px] fa-solid fa-magnifying-glass"></i></a>
+                    <li class="icon hidden md:block search-btn"><i
+                            class="hover:text-primary duration-300 text-[24px] fa-solid fa-magnifying-glass"></i>
                     </li>
                     <li class="icon"><a href="">
                             <div class="relative">
@@ -104,6 +107,20 @@
         <img src="https://images.unsplash.com/photo-1511300636408-a63a89df3482?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
             alt="">
     </main>
+
+    <div class="search_wrap">
+        <div class="close-btn">
+            <span class="fas fa-times"></span>
+        </div>
+        <div class="wrapper">
+            <div class="search-data">
+                <input type="text" required>
+                <div class="line"></div>
+                <label>Type to search..</label>
+                <span class="fas fa-search"></span>
+            </div>
+        </div>
+    </div>
 
 
 

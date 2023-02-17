@@ -74,7 +74,7 @@ body {
 .header .menu > .menu-item > a .plus {
   display: inline-block;
   height: 12px;
-  width: 12px;
+  width: 8px;
   position: relative;
   margin-left: 5px;
   pointer-events: none;
@@ -190,7 +190,7 @@ body {
 
 .header .menu-overlay {
   position: fixed;
-  z-index: 999;
+  z-index: 900;
   background-color: rgba(0, 0, 0, 0.5);
   left: 0;
   top: 0;
@@ -227,7 +227,7 @@ body {
     top: 0;
     overflow-y: auto;
     background-color: #fff;
-    z-index: 1000;
+    z-index: 950;
     padding: 15px 0;
     transition: all 0.5s ease;
   }
@@ -288,4 +288,93 @@ body {
   .header .open-nav-menu {
     display: flex;
   }
+}
+
+/* search */
+
+.wrapper,
+.search-data {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.wrapper {
+  position: fixed;
+  height: 0px;
+  width: 0px;
+  border-radius: 100%;
+  background: linear-gradient(-135deg, #0000009d, #0000009d);
+  transition: all 0.4s linear;
+  z-index: 980;
+}
+.wrapper.active {
+  height: 4000px;
+  width: 4000px;
+}
+.search-data {
+  position: absolute;
+  height: 50px;
+  width: 8%;
+  display: flex;
+  text-align: center;
+  /* display: none; */
+}
+.search-data input {
+  height: 100%;
+  width: 85%;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 22px;
+  font-weight: 500;
+  color: #fff;
+  position: relative;
+  left: -20px;
+}
+.search-data .line {
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background: #fff;
+  bottom: 0;
+  transform: scaleX(0);
+  transition: transform 0.4s 0.3s linear;
+}
+.search-data .line.active {
+  transform: scaleX(1);
+}
+.search-data label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  font-size: 20px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+.search-data input:valid ~ label {
+  opacity: 0;
+}
+.search-data span {
+  color: #fff;
+  position: absolute;
+  font-size: 24px;
+  right: 0;
+  top: 15px;
+  cursor: pointer;
+}
+.close-btn {
+  position: absolute;
+  z-index: 999;
+  right: 24px;
+  top: 25px;
+  font-size: 25px;
+  color: #fff;
+  cursor: pointer;
+}
+.search-data,
+.search-data span,
+.search-data label,
+.close-btn {
+  display: none;
 }

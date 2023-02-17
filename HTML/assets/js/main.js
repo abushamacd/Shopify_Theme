@@ -27,17 +27,17 @@ function animateText() {
 window.onload = animateText;
 
 // bottom
-
 (() => {
   const openNavMenu = document.querySelector(".open-nav-menu"),
     closeNavMenu = document.querySelector(".close-nav-menu"),
+    closeSideMenu = document.querySelector(".search-btn"),
     navMenu = document.querySelector(".nav-menu"),
     menuOverlay = document.querySelector(".menu-overlay"),
     mediaSize = 991;
 
   openNavMenu.addEventListener("click", toggleNav);
   closeNavMenu.addEventListener("click", toggleNav);
-  // close the navMenu by clicking outside
+  closeSideMenu.addEventListener("click", toggleNav);
   menuOverlay.addEventListener("click", toggleNav);
 
   function toggleNav() {
@@ -94,3 +94,26 @@ window.onload = animateText;
     }
   });
 })();
+
+// search
+$(".search-btn").click(function () {
+  $(".wrapper").addClass("active");
+
+  $(".search-data").fadeIn(500);
+  $(".close-btn").fadeIn(500);
+  $(".search-data .line").addClass("active");
+  setTimeout(function () {
+    $("input").focus();
+    $(".search-data label").fadeIn(500);
+    $(".search-data span").fadeIn(500);
+  }, 800);
+});
+$(".close-btn").click(function () {
+  $(".wrapper").removeClass("active");
+  $(".search-data").fadeOut(500);
+  $(".close-btn").fadeOut(500);
+  $(".search-data .line").removeClass("active");
+  $("input").val("");
+  $(".search-data label").fadeOut(500);
+  $(".search-data span").fadeOut(500);
+});
