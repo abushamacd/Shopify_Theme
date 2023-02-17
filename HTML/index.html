@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThmsPark</title>
+    <!-- CSS File -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_top text-center border-b-[1px] border-primary text-sm text-gray-700 py-2 px-6">
+            <div class="announcement font-bold">
+                <p class="animate-text">
+                    <span>Welcome to ThmsPark</span>
+                    <span>10% discount</span>
+                    <span>Free Shipping</span>
+                    <span>Easy Return</span>
+                    <span>Worldwide delivery</span>
+                </p>
+            </div>
+        </div>
+        <div class="header-main md:px-6 px-2">
+            <div class="logo">
+                <a href=""><img src="./assets/images/logo.png" width="200" alt=""></a>
+            </div>
+
+            <div class="menu-overlay">
+            </div>
+            <!-- navigation menu start -->
+            <nav class="nav-menu">
+                <div class="flex justify-between">
+                    <div class="close-nav-menu ">
+                        <i class="hover:text-primary duration-300 text-[24px] fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="close-nav-menu">
+                        <i class="mr-2 hover:text-primary duration-300 text-[24px] fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <ul class="menu">
+                    <li class="menu-item menu-item-has-children">
+                        <a href="#" data-toggle="sub-menu">Home <i class="plus"></i></a>
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="#">Home 1</a></li>
+                            <li class="menu-item"><a href="#">Home 2</a></li>
+                            <li class="menu-item"><a href="#">Home 3</a></li>
+                            <li class="menu-item"><a href="#">Home 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Services</a>
+                    </li>
+                    <li class="menu-item menu-item-has-children">
+                        <a href="#" data-toggle="sub-menu">Pages <i class="plus"></i></a>
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="#">page 1</a></li>
+                            <li class="menu-item"><a href="#">page 2</a></li>
+                            <li class="menu-item"><a href="#">page 3</a></li>
+                            <li class="menu-item"><a href="#">page 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">News</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- navigation menu end -->
+            <div class="header_action flex md:mt-0 mt-[10px]">
+                <ul class="icons flex items-center gap-4">
+                    <li class="icon hidden md:block"><a href=""><i
+                                class="hover:text-primary duration-300 text-[24px] fa-solid fa-magnifying-glass"></i></a>
+                    </li>
+                    <li class="icon"><a href="">
+                            <div class="relative">
+                                <i class="hover:text-primary duration-300 text-[24px] fa-brands fa-opencart"></i>
+                                <div
+                                    class="bg-primary text-white h-5 w-5 absolute top-[-5px] right-[-3px] flex justify-center items-center rounded-full p-2">
+                                    <span class="text-xs font-semibold">1</span>
+                                </div>
+                            </div>
+                        </a></li>
+                    <li class="icon"><a href=""><i
+                                class="hover:text-primary duration-300 text-[24px] fa-regular fa-circle-user"></i></a>
+                </ul>
+                <div class="open-nav-menu ml-3">
+                    <span></span>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+        <img src="https://images.unsplash.com/photo-1511300636408-a63a89df3482?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+            alt="">
+    </main>
+
+
+
+    <!-- JS File -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#e52e06',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/8cffe8c664.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
