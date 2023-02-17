@@ -39,13 +39,23 @@ body {
 }
 
 /* nav */
+#navbar {
+  position: absolute;
+  width: 100%;
+  max-width: 1920px;
+}
 .header-main {
-  background-color: #ffffff;
+  background-color: #ffffff00;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
-  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.header-main:hover,
+.header .sticky {
+  background-color: #fff;
 }
 
 .header .logo a {
@@ -377,4 +387,15 @@ body {
 .search-data label,
 .close-btn {
   display: none;
+}
+
+.sticky {
+  transition: all 0.3s ease-in-out;
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 105px;
 }
