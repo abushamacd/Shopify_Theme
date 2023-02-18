@@ -389,13 +389,14 @@ body {
   display: none;
 }
 
-.sticky {
+.header .sticky {
   transition: all 0.3s ease-in-out;
   position: fixed !important;
   top: 0;
   width: 100%;
+  box-shadow: 0px 0px 6px #5c5c5cab;
 }
 
-.sticky + .content {
+.header .sticky + .content {
   padding-top: 105px;
 }
