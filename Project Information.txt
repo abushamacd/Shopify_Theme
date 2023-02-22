@@ -1,0 +1,20 @@
+***************************************************************************
+
+Project - 001
+===============
+Name: Nomad
+Font: Aleo, Gotham-Bold, Gotham-Book, Gotham Book 400
+Menu font size : 18px
+Announcement_bar: 16
+Section Subtitle, Button Font: 20px
+button padding 13 19
+Section tile : 47px
+Over Image font : 80px
+Footer font : 15px
+collction mega menu font: 27px
+footer font:  Aleo
+top padding: 70px
+bottom padding: 60px
+card gap: 25px
+
+***************************************************************************

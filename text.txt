@@ -1,0 +1,10 @@
+theme new --password=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 --store="thmspark.myshopify.com" --name=nomad
+
+
+theme get --list --password=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 --store="thmspark.myshopify.com"
+
+theme deploy --password=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 --store="thmspark.myshopify.com"
+
+136803713249
+
+shopify theme dev --store thmspark.myshopify.com
