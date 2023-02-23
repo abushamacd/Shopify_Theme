@@ -18,7 +18,7 @@
 <body>
     <header>
         <!-- announcement bar -->
-        <div class="header_top font_g_bold text-center text-[16px] pt-[10px] p px-[20px] bg-[#000000]">
+        <div class="header_top font_g_bold text-center text-[16px] py-[5px] px-[20px] bg-[#000000]">
             <div class="announcement font-bold ">
                 <p class="animate-text">
                     <span>Welcome to ThmsPark</span>
@@ -53,7 +53,7 @@
     <!-- main -->
     <main class="">
         <!-- Banner -->
-        <img class="w-full" src="./assets/images/banner/81234.jpg" alt="">
+        <!-- <img class="w-full" src="./assets/images/banner/81234.jpg" alt=""> -->
         <!-- Catalog -->
         <section class="catalog">
 
@@ -68,16 +68,16 @@
 
         </section>
         <!-- Owner Speach -->
-        <section class="owner_speach text-center p-[100px]">
+        <!-- <section class="owner_speach text-center p-[100px]">
             <h2 class="">
                 "Our goal has always been to design and build gear that stands the test of time, performs at the highest
                 caliber, and does so in a beautiful yet subtle way."
             </h2>
             <h2 class="mt-[20px]">- Nick Walden, Creative Director</h2>
-        </section>
+        </section> -->
 
         <!-- About Nomad -->
-        <section class="about_nomad px-[20px] py-[10px] relative ">
+        <!-- <section class="about_nomad px-[20px] py-[10px] relative ">
             <div class="about_image rounded-[5px] relative">
                 <img class="rounded-[5px]" src="./assets/images/banner/439741.jpg" alt="" class="">
             </div>
@@ -86,16 +86,16 @@
                 <h2 class="subtitle">Lorem ipsum dolor sit amet.</h2>
                 <button class="common_button text-[#000] bg-[#fff] mt-[20px]">Button text</button>
             </div>
-        </section>
+        </section> -->
         <!-- Our Environment -->
-        <section class="our_environemt px-[20px] py-[10px] ">
+        <!-- <section class="our_environemt px-[20px] py-[10px] ">
             <div class="bg-[#fff] shadow-lg flex justify-center items-center rounded-[5px]">
                 <div class="w-6/12 ">
                     <img class="rounded-l-[5px]" src="./assets/images/banner/215112.jpg" alt="">
                 </div>
                 <div class="w-6/12 text-center px-[100px]">
                     <h2 class="sub_title">Lorem ipsum dolor sit amet.</h2>
-                    <h1 class="title">Lorem, ipsum.</h1>
+                    <h1 class="title">Environment</h1>
                     <p class="mt-[10px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat impedit
                         exercitationem omnis
                         assumenda harum repudiandae, labore fugit laudantium ut aut, est debitis autem nostrum
@@ -104,91 +104,51 @@
 
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
 
     <!-- footer -->
     <footer class="px-[20px] py-[70px] pb-[45px] mt-[50px] footer">
-        <div class="footer_top pb-[25px] mt-[20px] flex justify-between">
-            <div class="footer_menus flex gap-[45px]">
-                <!-- Single Menu -->
-                <div class="footer_menu">
-                    <h4 class="menu_title mb-[10px]">Menu Title</h4>
-                    <ul class="menu_items">
-                        <li class="menu_item py-[6px]">
+        <div class="footer_top pb-[25px] mt-[20px] flex justify-between flex-col-reverse md:flex-row">
+            <div class="footer_menus md:flex gap-[45px] ">
+                <div class="footer_menu ">
+                    <h4 onclick="expandMenu()" id="menu_title"
+                        class="menu_title mb-[10px] border-b-[1px] border-[#000] md:border-0 py-[20px] font_g_bold text-[16px] ">
+                        Menu Title</h4>
+                    <ul id="menu_items" class="menu_items hidden md:block">
+                        <li class="menu_item py-[6px] text-[15px] duration-700 ease-in-out">
                             <a href="" class="">
                                 Item 1
                             </a>
                         </li>
-                        <li class="menu_item py-[6px]">
+                        <li class="menu_item py-[6px] text-[15px]">
                             <a href="" class="">
                                 Item 1
                             </a>
                         </li>
-                        <li class="menu_item py-[6px]">
-                            <a href="" class="">
-                                Item 1
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Single Menu -->
-                <div class="footer_menu">
-                    <h4 class="menu_title mb-[10px]">Menu Title</h4>
-                    <ul class="menu_items">
-                        <li class="menu_item py-[6px]">
-                            <a href="" class="">
-                                Item 1
-                            </a>
-                        </li>
-                        <li class="menu_item py-[6px]">
-                            <a href="" class="">
-                                Item 1
-                            </a>
-                        </li>
-                        <li class="menu_item py-[6px]">
+                        <li class="menu_item py-[6px] text-[15px]">
                             <a href="" class="">
                                 Item 1
                             </a>
                         </li>
                     </ul>
                 </div>
-                <!-- Single Menu -->
-                <div class="footer_menu">
-                    <h4 class="menu_title mb-[10px]">Menu Title</h4>
-                    <ul class="menu_items">
-                        <li class="menu_item py-[6px]">
+                <div class="footer_menu ">
+                    <h4 onclick="expandMenu()" id="menu_title"
+                        class="menu_title mb-[10px] border-b-[1px] border-[#000] md:border-0 py-[20px] font_g_bold text-[16px] ">
+                        Menu Title</h4>
+                    <ul id="menu_items" class="menu_items hidden md:block">
+                        <li class="menu_item py-[6px] text-[15px] duration-700">
                             <a href="" class="">
                                 Item 1
                             </a>
                         </li>
-                        <li class="menu_item py-[6px]">
+                        <li class="menu_item py-[6px] text-[15px]">
                             <a href="" class="">
                                 Item 1
                             </a>
                         </li>
-                        <li class="menu_item py-[6px]">
-                            <a href="" class="">
-                                Item 1
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Single Menu -->
-                <div class="footer_menu">
-                    <h4 class="menu_title mb-[10px]">Menu Title</h4>
-                    <ul class="menu_items">
-                        <li class="menu_item py-[6px]">
-                            <a href="" class="">
-                                Item 1
-                            </a>
-                        </li>
-                        <li class="menu_item py-[6px]">
-                            <a href="" class="">
-                                Item 1
-                            </a>
-                        </li>
-                        <li class="menu_item py-[6px]">
+                        <li class="menu_item py-[6px] text-[15px]">
                             <a href="" class="">
                                 Item 1
                             </a>
@@ -196,20 +156,23 @@
                     </ul>
                 </div>
             </div>
-            <div class="footer_form">
-                <p class="mb-[15px]">New products, blog updates, deals, and more.</p>
+            <div class="footer_form md:my-0 my-[20px]">
+                <p class="mb-[15px] text-[14px] text-center md:text-start ">New products, blog updates, deals, and more.
+                </p>
                 <form action="" class="newsletter flex">
-                    <input class="py-[8px] w-full px-[16px] mr-[5px]" type="email" name="email" id="">
-                    <input class="text-[#fff] py-[8px] px-[15px] bg-[#000]" type="submit" value="Subscribe">
+                    <input class="py-[8px] w-full px-[16px] mr-[5px]" type="email" name="email" id=""
+                        placeholder="Email">
+                    <input class="text-[#fff] font_g_bold text-[14px] pt-[15px] py-[8px] px-[15px] bg-[#000]"
+                        type="submit" value="Subscribe">
                 </form>
             </div>
         </div>
-        <div class="footer_middle pb-[20px] flex justify-between items-end">
-            <div class="logo w-[200px]">
+        <div class="footer_middle pb-[20px] md:flex justify-between items-end">
+            <div class="logo w-[200px] hidden md:block">
                 <img src="./assets/images/logo.png" alt="">
             </div>
-            <div class="middle_right flex items-end">
-                <ul class="social_icons flex gap-[15px]">
+            <div class="middle_right flex justify-between items-end">
+                <ul class=" social_icons order-2 md:order-1 flex gap-[15px]">
                     <a href="" class="">
                         <li class=""><i class="fa-brands fa-instagram"></i></li>
                     </a>
@@ -220,13 +183,14 @@
                         <li class=""><i class="fa-brands fa-twitter"></i></i></li>
                     </a>
                 </ul>
-                <img class="w-[60px] h-[100px] ml-[20px]" src="./assets/images/certificate.png" alt="">
+                <img class="w-[60px] h-[100px] md:ml-[20px] order-1 md:order-2 " src="./assets/images/certificate.png"
+                    alt="">
             </div>
         </div>
         <div
-            class="footer_bottom flex justify-between items-center pt-[20px] pb-[45px] text-gray-500 border-gray-500 border-t-[1px]">
+            class="footer_bottom md:flex text-center justify-between items-center pt-[20px] pb-[45px] text-gray-500 text-[14px] border-gray-500 border-t-[1px]">
             <div class="copyright">2023 Nomad® Goods, Inc. All rights reserved.</div>
-            <div class="policy_menu">
+            <div class="policy_menu md:mt-0 mt-[20px] ml-[15px] md:ml-0">
                 <nav class="policy_menu">
                     <ul class="">
                         <a href="">

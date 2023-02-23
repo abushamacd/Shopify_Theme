@@ -6,11 +6,14 @@ Name: Nomad
 Font: Aleo, Gotham-Bold, Gotham-Book, Gotham Book 400
 Menu font size : 18px
 Announcement_bar: 16
+title: 80px
+subtitle: 27px
+Section title : 47px
 Section Subtitle, Button Font: 20px
 button padding 13 19
-Section tile : 47px
 Over Image font : 80px
 Footer font : 15px
+Copyright: 14px
 collction mega menu font: 27px
 footer font:  Aleo
 top padding: 70px

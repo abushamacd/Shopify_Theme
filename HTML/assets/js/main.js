@@ -41,3 +41,13 @@ function myFunction() {
     navbar.classList.remove("sticky_nvabar");
   }
 }
+
+// footer
+const expandMenu = () => {
+  const menuItems = document.getElementById("menu_items");
+  if (menuItems.classList.contains("hidden")) {
+    menuItems.classList.remove("hidden");
+  } else {
+    menuItems.classList.add("hidden");
+  }
+};

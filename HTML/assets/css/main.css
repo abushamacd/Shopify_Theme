@@ -12,6 +12,19 @@ i {
   padding: 13px 29px;
   text-transform: capitalize;
   border-radius: 3px;
+  font-family: "GothamBold";
+}
+
+.sub_title {
+  font-size: 27px;
+  font-family: "GothamBold";
+}
+
+.title {
+  font-size: 80px;
+  font-family: "GothamBold";
+  line-height: 1.11;
+  /* font-weight: 600; */
 }
 
 /* header */
@@ -72,6 +85,8 @@ ul.main_menu li {
 /* Footer */
 .footer {
   background: url("./../images/grey_footer.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .policy_menu ul li {
   display: inline-block;
@@ -81,7 +96,7 @@ ul.main_menu li {
   content: "";
   display: inline-block;
   height: 12px;
-  margin: 0 18px;
+  margin: 0 15px;
   vertical-align: middle;
   width: 1px;
 }

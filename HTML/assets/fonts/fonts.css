@@ -2,21 +2,21 @@
   font-family: "AleoRegular";
   font-style: normal;
   font-weight: normal;
-  src: local("AleoRegular"), url("AleoRegular.woff") format("woff");
+  src: local("Aleo-Regular"), url("Aleo-Regular.woff") format("woff");
 }
 
 @font-face {
   font-family: "GothamBold";
   font-style: normal;
-  font-weight: normal;
-  src: local("GothamBold"), url("GothamBold.woff") format("woff");
+  font-weight: bold;
+  src: local("Gotham-Bold"), url("Gotham-Bold.woff") format("woff");
 }
 
 @font-face {
   font-family: "GothamBook";
   font-style: normal;
   font-weight: normal;
-  src: local("GothamBook"), url("GothamBook.woff") format("woff");
+  src: local("Gotham-Book"), url("Gotham-Book.woff") format("woff");
 }
 
 .font_aleo {
