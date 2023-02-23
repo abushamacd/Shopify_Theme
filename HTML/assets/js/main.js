@@ -27,20 +27,20 @@ function animateText() {
 window.onload = animateText;
 
 // sticky navbar
-window.onscroll = function () {
-  myFunction();
-};
+// window.onscroll = function () {
+//   myFunction();
+// };
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+// var navbar = document.getElementById("navbar");
+// var sticky = navbar.offsetTop;
 
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky_nvabar");
-  } else {
-    navbar.classList.remove("sticky_nvabar");
-  }
-}
+// function myFunction() {
+//   if (window.pageYOffset >= sticky) {
+//     navbar.classList.add("sticky_nvabar");
+//   } else {
+//     navbar.classList.remove("sticky_nvabar");
+//   }
+// }
 
 // footer
 const expandMenu = () => {
