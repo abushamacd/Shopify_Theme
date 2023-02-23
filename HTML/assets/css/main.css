@@ -13,6 +13,7 @@ i {
   text-transform: capitalize;
   border-radius: 3px;
   font-family: "GothamBold";
+  font-size: 20px;
 }
 
 .sub_title {
@@ -24,7 +25,6 @@ i {
   font-size: 80px;
   font-family: "GothamBold";
   line-height: 1.11;
-  /* font-weight: 600; */
 }
 
 /* header */
@@ -112,4 +112,23 @@ ul.main_menu li {
   height: 100%;
   width: 100%;
   border-radius: 5px;
+}
+
+/* Responsive CSS */
+@media screen and (max-width: 991px) {
+  .common_button {
+    padding: 13px 29px;
+    text-transform: capitalize;
+    border-radius: 3px;
+    font-family: "GothamBold";
+    font-size: 20px;
+  }
+
+  .sub_title {
+    font-size: 18px;
+  }
+
+  .title {
+    font-size: 47px;
+  }
 }
