@@ -54,6 +54,23 @@
     <main class="">
         <!-- Banner -->
         <!-- <img class="w-full" src="./assets/images/banner/81234.jpg" alt=""> -->
+        <!-- Featured Products -->
+        <section class="featured_products md:px-[20px] px-[10px]">
+            <div class="bg-[#fff] shadow-lg flex md:flex-row flex-col justify-center items-center rounded-[5px]">
+                <div class="md:w-6/12 w-full ">
+                    <img class="md:h-[600px] object-fit md:py-[60px] " src="./assets/images/banner/215112.jpg" alt="">
+                </div>
+                <div class="md:w-6/12 w-full text-center md:px-[100px] px-[10px] md:py-0 py-[30px]">
+                    <h2 class="section_subtitle border-2 border-[#000] rounded-lg inline-block py-1 px-4 mb-2">Apple
+                        Watch
+                    </h2>
+                    <h1 class="title">Design Lab</h1>
+                    <button class="common_button text-[#fff] bg-[#000] mt-[20px]">Button text</button>
+
+                </div>
+            </div>
+        </section>
+
         <!-- Products -->
         <section class="catalog md:px-[20px] px-[10px] text-center">
             <div class="section_heading md:pt-[50px] pt-[30px]">
@@ -65,66 +82,26 @@
             <div
                 class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5 md:py-[30px] py-[20px]">
                 <!--Card-->
-                <a href="">
-                    <div
-                        class="rounded bg-[#fff] overflow-hidden shadow-lg md:h-[485px] h-[235px] md:p-[20px] p-[10px] pb-0">
+                <div
+                    class="rounded bg-[#fff] overflow-hidden shadow-lg md:h-[485px] h-[235px] md:p-[20px] p-[10px] pb-0">
+                    <a href="">
                         <img class="object-cover bg-center md:h-[350px] h-[140px] w-[full] rounded shadow-lg"
                             src="./assets/images/banner/439741.jpg" alt="">
-                        <div class="card_info text-start pt-[10px]">
-                            <h2 class="product_title">Product Title</h2>
-                            <p class="product_desc md:mt-[5px]">Lorem, ipsum dolor.</p>
-                            <div class="product_color md:mt-[10px] mt-[5px]">
-                                <ul class=" flex gap-2">
-                                    <li class="h-[12px] w-[12px] bg-red-200 rounded-full"></li>
-                                    <li class="h-[12px] w-[12px] bg-red-300 rounded-full"></li>
-                                    <li class="h-[12px] w-[12px] bg-red-400 rounded-full"></li>
-                                    <li class="h-[12px] w-[12px] bg-red-500 rounded-full"></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <!--Card-->
-                <a href="">
-                    <div
-                        class="rounded bg-[#fff] overflow-hidden shadow-lg md:h-[485px] h-[235px] md:p-[20px] p-[10px] pb-0">
-                        <img class="object-cover bg-center md:h-[350px] h-[140px] w-[full] rounded shadow-lg"
-                            src="./assets/images/banner/439741.jpg" alt="">
-                        <div class="card_info text-start pt-[10px]">
-                            <h2 class="product_title">Product Title</h2>
-                            <p class="product_desc md:mt-[5px]">Lorem, ipsum dolor.</p>
-                            <div class="product_color md:mt-[10px] mt-[5px]">
-                                <ul class=" flex gap-2">
-                                    <li class="h-[12px] w-[12px] bg-red-200 rounded-full"></li>
-                                    <li class="h-[12px] w-[12px] bg-red-300 rounded-full"></li>
-                                    <li class="h-[12px] w-[12px] bg-red-400 rounded-full"></li>
-                                    <li class="h-[12px] w-[12px] bg-red-500 rounded-full"></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <!--Card-->
-                <a href="">
-                    <div
-                        class="rounded bg-[#fff] overflow-hidden shadow-lg md:h-[485px] h-[235px] md:p-[20px] p-[10px] pb-0">
-                        <img class="object-cover bg-center md:h-[350px] h-[140px] w-[full] rounded shadow-lg"
-                            src="./assets/images/banner/439741.jpg" alt="">
-                        <div class="card_info text-start pt-[10px]">
-                            <h2 class="product_title">Product Title</h2>
-                            <p class="product_desc md:mt-[5px]">Lorem, ipsum dolor.</p>
-                            <div class="product_color md:mt-[10px] mt-[5px]">
-                                <ul class=" flex gap-2">
-                                    <li class="h-[12px] w-[12px] bg-red-200 rounded-full"></li>
-                                    <li class="h-[12px] w-[12px] bg-red-300 rounded-full"></li>
-                                    <li class="h-[12px] w-[12px] bg-red-400 rounded-full"></li>
-                                    <li class="h-[12px] w-[12px] bg-red-500 rounded-full"></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </a>
 
+                    </a>
+                    <div class="card_info text-start pt-[10px]">
+                        <h2 class="product_title">Product Title</h2>
+                        <p class="product_desc md:mt-[5px]">Lorem, ipsum dolor.</p>
+                        <div class="product_color md:mt-[10px] mt-[5px]">
+                            <div class=" flex gap-2 cursor-pointer">
+                                <span class="h-[12px] w-[12px] bg-red-200 rounded-full"></span>
+                                <span class="h-[12px] w-[12px] bg-red-300 rounded-full"></span>
+                                <span class="h-[12px] w-[12px] bg-red-400 rounded-full"></span>
+                                <span class="h-[12px] w-[12px] bg-red-500 rounded-full"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <button class="common_button text-[#fff] bg-[#000]">Button text</button>
         </section>
@@ -145,6 +122,7 @@
                 </div>
             </div>
         </section>
+
         <!-- Collections -->
         <section class="collections md:px-[20px] px-[10px] mt-[10px]">
             <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
@@ -180,6 +158,7 @@
                 </a>
             </div>
         </section>
+
         <!-- Owner Speach -->
         <section class="owner_speach text-center md:p-[100px] py-[40px] px-[30px]">
             <h2 class="md:text-[26px] text-[16px]">
@@ -188,6 +167,7 @@
             </h2>
             <h2 class="mt-[20px] font_g_bold md:text-[20px] text-[16px]">- Nick Walden, Creative Director</h2>
         </section>
+
         <!-- About Nomad -->
         <section class="about_nomad md:px-[20px] px-[10px] py-[10px] relative">
             <div class="about_image rounded-[5px] relative md:h-[780px] h-[500px] ">
@@ -202,6 +182,7 @@
                 </div>
             </div>
         </section>
+
         <!-- Our Environment -->
         <section class="our_environemt md:px-[20px] px-[10px] py-[10px] ">
             <div class="bg-[#fff] shadow-lg flex md:flex-row flex-col justify-center items-center rounded-[5px]">
