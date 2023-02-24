@@ -36,7 +36,18 @@ i {
 .section_subtitle {
   font-size: 20px;
   font-family: "GothamBold";
-  line-height: 1.11;
+}
+
+.product_title {
+  font-size: 20px;
+  font-family: "GothamBold";
+  text-transform: capitalize;
+}
+
+.product_desc {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "GothamBook";
 }
 
 /* header */
@@ -142,5 +153,21 @@ ul.main_menu li {
 
   .title {
     font-size: 47px;
+  }
+
+  .section_title {
+    font-size: 27px;
+  }
+
+  .section_subtitle {
+    font-size: 16px;
+  }
+
+  .product_title {
+    font-size: 16px;
+  }
+
+  .product_desc {
+    font-size: 12px;
   }
 }
