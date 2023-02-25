@@ -16,47 +16,68 @@
 </head>
 
 <body>
-    <header>
-        <!-- announcement bar -->
-        <div class="header_top font_g_bold text-center text-[16px] py-[5px] px-[20px] bg-[#000000]">
-            <div class="announcement font-bold ">
-                <p class="animate-text">
-                    <span>Welcome to ThmsPark</span>
-                    <span>10% discount</span>
-                    <span>Free Shipping</span>
-                    <span>Easy Return</span>
-                    <span>Worldwide delivery</span>
-                </p>
-            </div>
+    <!-- <header> -->
+    <!-- announcement bar -->
+    <div class="header_top font_g_bold text-center text-[16px] py-[5px] px-[20px] bg-[#000000]">
+        <div class="announcement font-bold ">
+            <p class="animate-text">
+                <span>Welcome to ThmsPark</span>
+                <span>10% discount</span>
+                <span>Free Shipping</span>
+                <span>Easy Return</span>
+                <span>Worldwide delivery</span>
+            </p>
         </div>
+    </div>
 
-        <!-- Main menu -->
-        <!-- <nav id="navbar" class="md:px-[70px] py-[20px] flex justify-between items-center bg-[#fff]">
-            <div class="logo w-[200px]">
-                <img src="./assets/images/logo.png" alt="">
-            </div>
-            <ul class="main_menu max-w-[800px]">
-                <li><a href="">home</a></li>
-                <li><a href="">home</a></li>
-                <li><a href="">home</a></li>
-                <li><a href="">home</a></li>
-                <li><a href="">home</a></li>
+    <!-- Main menu -->
+    <nav id="navbar"
+        class="md:px-[70px] px-[20px] z-[999] md:py-[20px] py-[10px] flex justify-between items-center bg-[#fff] font_g_bold md:text-[18px]">
+        <div class="logo md:w-[200px] w-[150px]">
+            <img src="./assets/images/logo.png" alt="">
+        </div>
+        <ul id="main_menu" class="main_menu md:block hidden max-w-[800px]">
+            <li><a href="">home</a></li>
+            <li><a href="">home</a></li>
+            <li><a href="">home</a></li>
+            <li><a href="">home</a></li>
+            <li><a href="">home</a></li>
+            <li><a href="">home</a></li>
+        </ul>
+        <div class="navbar_action">
+            <ul class="flex gap-5">
+                <li class="text-[#000] hidden md:block">
+                    <i class="fa-regular fa-bell"></i>
+                </li>
+                <li class="">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </li>
+                <li class="">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </li>
+                <li onclick="openNavbar()" id="navbar_open" class="md:hidden block">
+                    <i class="fa-solid fa-bars"></i>
+                </li>
+                <li onclick="closeNavbar()" id="navbar_close" class="hidden">
+                    <i class="fa-solid fa-xmark"></i>
+                </li>
             </ul>
-            <div class="navbar_action flex gap-5">
-                <i class="text-[#000] fa-regular fa-bell"></i>
-                <i class="text-[#000] fa-solid fa-magnifying-glass"></i>
-                <i class="text-[#000] fa-solid fa-cart-shopping"></i>
-            </div>
-        </nav> -->
-    </header>
+
+
+
+
+
+        </div>
+    </nav>
+    <!-- </header> -->
 
     <!-- main -->
-    <main class="">
+    <main class="content">
         <!-- Banner -->
         <section class="banner">
             <div class="collection_card relative">
-                <div class="about_image  rounded-[5px] relative">
-                    <img class="rounded-[5px] md:h-[700px] h-[500px] w-full object-cover bg-center"
+                <div class="about_image  relative">
+                    <img class="md:h-[700px] h-[500px] w-full object-cover bg-center"
                         src="./assets/images/banner/439741.jpg" alt="" class="">
                 </div>
                 <div

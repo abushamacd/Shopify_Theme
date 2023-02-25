@@ -27,20 +27,37 @@ function animateText() {
 window.onload = animateText;
 
 // sticky navbar
-// window.onscroll = function () {
-//   myFunction();
-// };
+window.onscroll = function () {
+  myFunction();
+};
 
-// var navbar = document.getElementById("navbar");
-// var sticky = navbar.offsetTop;
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
 
-// function myFunction() {
-//   if (window.pageYOffset >= sticky) {
-//     navbar.classList.add("sticky_nvabar");
-//   } else {
-//     navbar.classList.remove("sticky_nvabar");
-//   }
-// }
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky_nvabar");
+  } else {
+    navbar.classList.remove("sticky_nvabar");
+  }
+}
+
+// Toggle Navbar
+const openNavbar = () => {
+  const navbarOpen = document.getElementById("navbar_open");
+  const navbarClose = document.getElementById("navbar_close");
+  navbarOpen.classList.remove("block");
+  navbarOpen.classList.add("hidden");
+  navbarClose.classList.remove("hidden");
+  navbarClose.classList.add("block");
+};
+const closeNavbar = () => {
+  const navbarOpen = document.getElementById("navbar_open");
+  const navbarClose = document.getElementById("navbar_close");
+  navbarOpen.classList.remove("hidden");
+  navbarClose.classList.remove("block");
+  navbarClose.classList.add("hidden");
+};
 
 // footer
 const expandMenu = () => {

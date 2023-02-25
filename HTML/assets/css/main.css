@@ -95,14 +95,14 @@ ul.main_menu li {
 
 .sticky_nvabar {
   transition: all 0.3s ease-in-out;
-  position: fixed !important;
+  position: fixed;
   top: 0;
   width: 100%;
   box-shadow: 0px 0px 6px #5c5c5cab;
 }
 
 .sticky_nvabar + .content {
-  padding-top: 105px;
+  padding-top: 60px;
 }
 
 /* Footer */
@@ -170,4 +170,6 @@ ul.main_menu li {
   .product_desc {
     font-size: 12px;
   }
+
+  /* mainmenu */
 }
