@@ -50,6 +50,11 @@ i {
   font-family: "GothamBook";
 }
 
+.menu_title {
+  font-size: 27px;
+  font-family: "GothamBold";
+}
+
 /* header */
 .announcement p {
   margin: 0;
@@ -103,6 +108,10 @@ ul.main_menu li {
 
 .sticky_nvabar + .content {
   padding-top: 60px;
+}
+
+.accordion-content {
+  transition: max-height 0.3s ease-out, padding 0.3s ease;
 }
 
 /* Footer */
@@ -169,6 +178,14 @@ ul.main_menu li {
 
   .product_desc {
     font-size: 12px;
+  }
+
+  .sticky_nvabar {
+    box-shadow: none;
+  }
+
+  .menu_title {
+    font-size: 20px;
   }
 
   /* mainmenu */

@@ -32,11 +32,17 @@ window.onscroll = function () {
 };
 
 var navbar = document.getElementById("navbar");
+const mobileMenu = document.getElementById("mobile_menu");
 var sticky = navbar.offsetTop;
 
 function myFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky_nvabar");
+    if (navbar.classList.contains("sticky_nvabar")) {
+      mobileMenu.classList.add("sticky", "top-[54px]");
+    } else {
+      mobileMenu.classList.remove("sticky");
+    }
   } else {
     navbar.classList.remove("sticky_nvabar");
   }
@@ -46,17 +52,61 @@ function myFunction() {
 const openNavbar = () => {
   const navbarOpen = document.getElementById("navbar_open");
   const navbarClose = document.getElementById("navbar_close");
+  const mobileMenu = document.getElementById("mobile_menu");
+  const navBar = document.getElementById("navbar");
   navbarOpen.classList.remove("block");
   navbarOpen.classList.add("hidden");
   navbarClose.classList.remove("hidden");
   navbarClose.classList.add("block");
+  mobileMenu.classList.remove("hidden");
+  mobileMenu.classList.add("block");
+  navBar.classList.remove("bg-[#fff]");
+  navBar.classList.add("bg-[#EFEFEF]");
 };
 const closeNavbar = () => {
   const navbarOpen = document.getElementById("navbar_open");
   const navbarClose = document.getElementById("navbar_close");
+  const mobileMenu = document.getElementById("mobile_menu");
+  const navBar = document.getElementById("navbar");
   navbarOpen.classList.remove("hidden");
   navbarClose.classList.remove("block");
   navbarClose.classList.add("hidden");
+  mobileMenu.classList.remove("block");
+  mobileMenu.classList.add("hidden");
+  navBar.classList.remove("bg-[#EFEFEF]");
+  navBar.classList.add("bg-[#fff]");
+};
+
+// mobile menu
+const accordionHeader = document.querySelectorAll(".accordion-header");
+accordionHeader.forEach((header) => {
+  header.addEventListener("click", function () {
+    const accordionContent =
+      header.parentElement.querySelector(".accordion-content");
+    let accordionMaxHeight = accordionContent.style.maxHeight;
+
+    // Condition handling
+    if (accordionMaxHeight == "0px" || accordionMaxHeight.length == 0) {
+      accordionContent.style.maxHeight = `${
+        accordionContent.scrollHeight + 32
+      }px`;
+      header.querySelector(".fas").classList.remove("fa-angle-down");
+      header.querySelector(".fas").classList.add("fa-minus");
+    } else {
+      accordionContent.style.maxHeight = `0px`;
+      header.querySelector(".fas").classList.add("fa-angle-down");
+      header.querySelector(".fas").classList.remove("fa-minus");
+    }
+  });
+});
+
+const expandMobileMenu = () => {
+  const singleMenu = document.getElementById("single_menu");
+  if (singleMenu.classList.contains("h-screen")) {
+    singleMenu.classList.remove("h-screen");
+  } else {
+    singleMenu.classList.add("h-screen");
+  }
 };
 
 // footer
