@@ -33,7 +33,8 @@ window.onscroll = function () {
 
 var navbar = document.getElementById("navbar");
 const mobileMenu = document.getElementById("mobile_menu");
-const desktopMenu = document.getElementById("desktop_menu");
+const desktopMenuLi = document.getElementsByClassName("mega-menu");
+const megaMenu = document.getElementsByClassName("mega-menu-wrapper");
 var sticky = navbar.offsetTop;
 
 function myFunction() {
@@ -41,13 +42,21 @@ function myFunction() {
     navbar.classList.add("sticky_nvabar");
     if (navbar.classList.contains("sticky_nvabar")) {
       mobileMenu.classList.add("sticky", "top-[54px]");
-      desktopMenu.classList.add("sticky_top");
+      for (let i = 0; i < megaMenu.length; i++) {
+        desktopMenuLi[i].onmouseenter = function () {
+          megaMenu[i].classList.add("sticky_top");
+        };
+      }
     } else {
       mobileMenu.classList.remove("sticky");
     }
   } else {
     navbar.classList.remove("sticky_nvabar");
-    desktopMenu.classList.remove("sticky_top");
+    for (let i = 0; i < megaMenu.length; i++) {
+      desktopMenuLi[i].onmouseenter = function () {
+        megaMenu[i].classList.remove("sticky_top");
+      };
+    }
   }
 }
 

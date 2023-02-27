@@ -192,50 +192,16 @@ ul.main_menu li {
   /* mainmenu */
 }
 
-.mainmenu ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.mainmenu li {
-  position: relative;
-  display: inline-block;
-  font-weight: bold;
-}
-
-.mainmenu li a {
-  display: block;
-}
-
-.mainmenu li ul {
-  position: absolute;
-  left: 0;
-  top: 66px;
-  background: #fff;
-  width: 250px;
-  text-align: left;
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.3s;
-  padding: 10px;
-  box-shadow: 0 0 5px #f6f6f6;
-  padding: 10px;
-  z-index: 99;
-}
-
 .mainmenu li:hover ul {
   opacity: 1;
   visibility: visible;
   top: 45px;
 }
-.mainmenu li ul li {
-  display: block;
-}
 
 .mainmenu li.mega-menu {
   position: static;
 }
+
 .mega-menu-wrapper {
   left: 0;
   right: 0;
@@ -261,15 +227,4 @@ ul.main_menu li {
 
 .sticky_top {
   top: 75px !important;
-}
-
-.mainmenu li.mega-menu ul {
-  position: relative;
-  left: auto;
-  top: auto;
-  opacity: 1;
-  visibility: visible;
-  padding: 0;
-  box-shadow: 0 0 0;
-  width: auto;
 }
