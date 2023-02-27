@@ -168,6 +168,23 @@ i {
   top: 110px;
 }
 
+.serach_bar {
+  top: -85px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.serach_bar.active {
+  opacity: 1;
+  visibility: visible;
+  top: 33px;
+}
+
+.serach_bar.active.top_0 {
+  top: 0px !important;
+}
+
 /* Footer */
 .footer {
   background: url("./../images/grey_footer.svg");

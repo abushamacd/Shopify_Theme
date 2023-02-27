@@ -18,7 +18,7 @@
 <body>
     <!-- <header> -->
     <!-- announcement bar -->
-    <div class="header_top font_g_bold text-center text-[16px] py-[5px] px-[20px] bg-[#000000]">
+    <div class="header_top font_g_bold text-center text-[16px] py-[5px] px-[20px] bg-[#000000] relative z-[1111]">
         <div class="announcement font-bold ">
             <p class="animate-text">
                 <span>Welcome to ThmsPark</span>
@@ -96,7 +96,7 @@
                     <i class="fa-regular fa-bell"></i>
                 </li>
                 <li class="">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid serach_open fa-magnifying-glass"></i>
                 </li>
                 <li class="">
                     <i class="fa-solid fa-cart-shopping"></i>
@@ -108,6 +108,7 @@
                     <i class="fa-solid fa-xmark"></i>
                 </li>
             </ul>
+            <!-- Notification -->
             <div id="notifications_area"
                 class="notifications_area h-[500px] overflow-auto bg-[#FFFFFF] absolute z-[999] right-[150px] w-[540px] p-[20px] rounded-[5px]">
                 <div class="notification_header flex justify-between items-center mb-[20px] ">
@@ -168,6 +169,19 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <!-- serach -->
+            <div id="serach_bar"
+                class="serach_bar md:px-[70px] px-[20px] h-[66px] flex justify-between items-center absolute bg-[#fff] z-[999] left-0 w-full">
+                <form class="flex flex-row-reverse" action="">
+                    <input type="text"
+                        class="font_aleo text-[25px] focus:outline-none text-gray-500 md:w-[1060px] w-[260px]"
+                        name="search" id="serach" placeholder="Search our store">
+                    <button type="submit" class="md:mr-[50px] mr-[30px]"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+
+                </form>
+                <i class="serach_close fa-solid fa-xmark"></i>
             </div>
         </div>
     </nav>
