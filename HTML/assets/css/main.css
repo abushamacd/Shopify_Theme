@@ -93,6 +93,9 @@ i {
 }
 
 /* Navigator */
+.mainmenu > ul > li:not(:last-child) {
+  margin-right: 60px;
+}
 
 ul.main_menu li {
   display: inline-block;
