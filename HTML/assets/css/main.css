@@ -97,14 +97,46 @@ i {
   margin-right: 60px;
 }
 
-ul.main_menu li {
-  display: inline-block;
-  margin-right: 60px;
+.mainmenu li:hover ul {
+  opacity: 1;
+  visibility: visible;
+  top: 45px;
+}
+
+.mainmenu li.mega-menu {
+  position: static;
+}
+
+.mega-menu-wrapper {
+  left: 0;
+  right: 0;
+  max-width: 80%;
+  margin: 0 auto;
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  z-index: -1;
+  box-shadow: 0 0 5px #f5f5f5;
+  top: 85px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.mainmenu li.mega-menu:hover .mega-menu-wrapper {
+  opacity: 1;
+  visibility: visible;
+  top: 110px;
+  z-index: 99;
+}
+
+.sticky_top {
+  top: 75px !important;
 }
 
 .sticky_nvabar {
   transition: all 0.3s ease-in-out;
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   box-shadow: 0px 0px 6px #5c5c5cab;
@@ -116,6 +148,24 @@ ul.main_menu li {
 
 .accordion-content {
   transition: max-height 0.3s ease-out, padding 0.3s ease;
+}
+
+/* notificaiton */
+.single_notification {
+  box-shadow: 0 8px 30px rgb(0 0 0 / 12%);
+}
+
+.notifications_area {
+  top: 85px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.notifications_area.active {
+  opacity: 1;
+  visibility: visible;
+  top: 110px;
 }
 
 /* Footer */
@@ -193,41 +243,4 @@ ul.main_menu li {
   }
 
   /* mainmenu */
-}
-
-.mainmenu li:hover ul {
-  opacity: 1;
-  visibility: visible;
-  top: 45px;
-}
-
-.mainmenu li.mega-menu {
-  position: static;
-}
-
-.mega-menu-wrapper {
-  left: 0;
-  right: 0;
-  max-width: 80%;
-  margin: 0 auto;
-  position: absolute;
-  width: 100%;
-  background: #fff;
-  z-index: -1;
-  box-shadow: 0 0 5px #f5f5f5;
-  top: 40px;
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.3s;
-}
-
-.mainmenu li.mega-menu:hover .mega-menu-wrapper {
-  opacity: 1;
-  visibility: visible;
-  top: 110px;
-  z-index: 99;
-}
-
-.sticky_top {
-  top: 75px !important;
 }

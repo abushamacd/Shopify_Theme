@@ -33,6 +33,7 @@ window.onscroll = function () {
 
 var navbar = document.getElementById("navbar");
 const mobileMenu = document.getElementById("mobile_menu");
+const notificationArea = document.getElementById("notifications_area");
 const desktopMenuLi = document.getElementsByClassName("mega-menu");
 const megaMenu = document.getElementsByClassName("mega-menu-wrapper");
 var sticky = navbar.offsetTop;
@@ -42,6 +43,7 @@ function myFunction() {
     navbar.classList.add("sticky_nvabar");
     if (navbar.classList.contains("sticky_nvabar")) {
       mobileMenu.classList.add("sticky", "top-[54px]");
+      notificationArea.classList.add("sticky_top");
       for (let i = 0; i < megaMenu.length; i++) {
         desktopMenuLi[i].onmouseenter = function () {
           megaMenu[i].classList.add("sticky_top");
@@ -52,6 +54,8 @@ function myFunction() {
     }
   } else {
     navbar.classList.remove("sticky_nvabar");
+    notificationArea.classList.remove("sticky_top");
+
     for (let i = 0; i < megaMenu.length; i++) {
       desktopMenuLi[i].onmouseenter = function () {
         megaMenu[i].classList.remove("sticky_top");
@@ -133,4 +137,12 @@ menuTitle.forEach((header) => {
       menuItems.classList.add("hidden");
     }
   });
+});
+
+// notificaiton
+$(".notification_open").click(function () {
+  $(".notifications_area").addClass("active");
+});
+$(".notification_close").click(function () {
+  $(".notifications_area").removeClass("active");
 });
