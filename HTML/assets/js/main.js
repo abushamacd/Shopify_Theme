@@ -122,11 +122,15 @@ const expandMobileMenu = () => {
 };
 
 // footer
-const expandMenu = () => {
-  const menuItems = document.getElementById("menu_items");
-  if (menuItems.classList.contains("hidden")) {
-    menuItems.classList.remove("hidden");
-  } else {
-    menuItems.classList.add("hidden");
-  }
-};
+const menuTitle = document.querySelectorAll(".footer_menu_title");
+menuTitle.forEach((header) => {
+  header.addEventListener("click", function () {
+    const menuItems = header.parentElement.querySelector(".menu_items");
+    if (menuItems.classList.contains("hidden")) {
+      menuItems.classList.remove("hidden");
+      menuItems.classList.add("block");
+    } else {
+      menuItems.classList.add("hidden");
+    }
+  });
+});
