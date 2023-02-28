@@ -34,6 +34,7 @@ window.onscroll = function () {
 var navbar = document.getElementById("navbar");
 const mobileMenu = document.getElementById("mobile_menu");
 const notificationArea = document.getElementById("notifications_area");
+const cartArea = document.getElementById("cart_area");
 const desktopMenuLi = document.getElementsByClassName("mega-menu");
 const megaMenu = document.getElementsByClassName("mega-menu-wrapper");
 const serachBar = document.getElementById("serach_bar");
@@ -45,6 +46,7 @@ function myFunction() {
     if (navbar.classList.contains("sticky_nvabar")) {
       mobileMenu.classList.add("sticky", "top-[54px]");
       notificationArea.classList.add("sticky_top");
+      cartArea.classList.add("sticky_top");
       serachBar.classList.add("top_0");
       for (let i = 0; i < megaMenu.length; i++) {
         desktopMenuLi[i].onmouseenter = function () {
@@ -57,6 +59,7 @@ function myFunction() {
   } else {
     navbar.classList.remove("sticky_nvabar");
     notificationArea.classList.remove("sticky_top");
+    cartArea.classList.remove("sticky_top");
     serachBar.classList.remove("top_0");
 
     for (let i = 0; i < megaMenu.length; i++) {
@@ -156,3 +159,25 @@ $(".serach_open").click(function () {
 $(".serach_close").click(function () {
   $(".serach_bar").removeClass("active");
 });
+// cart
+$(".cart_open").click(function () {
+  $(".cart_area").addClass("active");
+});
+$(".cart_close").click(function () {
+  $(".cart_area").removeClass("active");
+});
+
+function increaseValue() {
+  var value = parseInt(document.getElementById("number").value, 10);
+  value = isNaN(value) ? 0 : value;
+  value++;
+  document.getElementById("number").value = value;
+}
+
+function decreaseValue() {
+  var value = parseInt(document.getElementById("number").value, 10);
+  value = isNaN(value) ? 0 : value;
+  value < 1 ? (value = 1) : "";
+  value--;
+  document.getElementById("number").value = value;
+}

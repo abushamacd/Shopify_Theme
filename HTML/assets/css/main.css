@@ -9,6 +9,17 @@ i {
   font-size: 24px;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 .common_button {
   padding: 13px 29px;
   text-transform: capitalize;
@@ -168,6 +179,25 @@ i {
   top: 110px;
 }
 
+.cart_area {
+  top: 110px;
+  right: -110px;
+  opacity: 0;
+  visibility: hidden;
+  /* opacity: 1;
+  visibility: visible;
+  top: 110px;
+  right: 50px; */
+  transition: 0.5s;
+}
+
+.cart_area.active {
+  opacity: 1;
+  visibility: visible;
+  top: 110px;
+  right: 50px;
+}
+
 .serach_bar {
   top: -85px;
   opacity: 0;
@@ -257,6 +287,10 @@ i {
 
   .menu_title {
     font-size: 20px;
+  }
+
+  .cart_area.active {
+    right: 2%;
   }
 
   /* mainmenu */
