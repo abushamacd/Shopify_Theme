@@ -184,10 +184,6 @@ input[type="number"] {
   right: -110px;
   opacity: 0;
   visibility: hidden;
-  /* opacity: 1;
-  visibility: visible;
-  top: 110px;
-  right: 50px; */
   transition: 0.5s;
 }
 
@@ -213,6 +209,10 @@ input[type="number"] {
 
 .serach_bar.active.top_0 {
   top: 0px !important;
+}
+
+.cart_footer {
+  box-shadow: 0px -5px 20px #ddd;
 }
 
 /* Footer */

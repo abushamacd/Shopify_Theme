@@ -184,12 +184,12 @@
             </div>
             <!-- cart -->
             <div id="cart_area"
-                class="cart_area h-[500px] overflow-auto bg-[#FFFFFF] absolute z-[999] md:w-[540px] w-[96%] p-[20px] rounded-[5px]">
+                class="cart_area bg-[#FFFFFF] absolute z-[999] md:w-[540px] w-[96%] p-[20px] rounded-[5px]">
                 <div class="cart_header flex justify-between items-center mb-[20px] ">
                     <h1 class="capitalize md:text-[27px] text-[20px] font_g_bold">Your Cart</h1>
                     <i class="fa-solid fa-xmark cart_close"></i>
                 </div>
-                <div class="cart_content ">
+                <div class="cart_content h-[200px] overflow-auto">
                     <div class="single_cart flex p-[10px] mb-[15px]">
                         <img class="w-[80px] h-[90px] rounded-[5px] " src="./assets/images/banner/215112.jpg" alt="">
                         <div class="cart_info ml-[10px] w-full ">
@@ -199,19 +199,48 @@
                                 consectetur adipisicing.</p>
                             <div class="quantity_price flex justify-between items-center mt-[15px]">
                                 <form class="flex flex-row h-[30px] rounded-[3px]">
-                                    <div class="rounded-l-[3px] border-[1px] px-3 value-button cart_quantity_button flex justify-center items-center font_aleo"
-                                        id="decrease" onclick="decreaseValue()" value="Decrease Value text-[24px] ">-
+                                    <div class="dec rounded-l-[3px] border-[1px] px-3 value-button cart_quantity_button flex justify-center items-center font_aleo"
+                                        id="decrease">-
                                     </div>
                                     <input class="font_aleo border-[1px] pl-4 add_to_cart_input w-[50px]" type="number"
                                         id="number" value="0">
-                                    <div class="rounded-r-[3px] font_aleo border-[1px] px-3 cart_quantity_button text-[24px] value-button flex justify-center items-center"
-                                        id="increase" onclick="increaseValue()" value="Increase Value text-[24px] ">
+                                    <div class="inc rounded-r-[3px] font_aleo border-[1px] px-3 cart_quantity_button text-[24px] value-button flex justify-center items-center"
+                                        id="increase">
                                         +</div>
                                 </form>
                                 <p class="">$<span class="">99</span></p>
                             </div>
                         </div>
                     </div>
+                    <div class="single_cart flex p-[10px] mb-[15px]">
+                        <img class="w-[80px] h-[90px] rounded-[5px] " src="./assets/images/banner/215112.jpg" alt="">
+                        <div class="cart_info ml-[10px] w-full ">
+                            <h5 class="text-[18px] font_g_bold leading-[1.11] mb-[5px] ">Expand Your English Tan
+                                Collection</h5>
+                            <p class="text-[13px] text-gray-700 font_g_book leading-[1.4em] ">Lorem ipsum dolor sit amet
+                                consectetur adipisicing.</p>
+                            <div class="quantity_price flex justify-between items-center mt-[15px]">
+                                <form class="flex flex-row h-[30px] rounded-[3px]">
+                                    <div class="dec rounded-l-[3px] border-[1px] px-3 value-button cart_quantity_button flex justify-center items-center font_aleo"
+                                        id="decrease">-
+                                    </div>
+                                    <input class="font_aleo border-[1px] pl-4 add_to_cart_input w-[50px]" type="number"
+                                        id="number" value="0">
+                                    <div class="inc rounded-r-[3px] font_aleo border-[1px] px-3 cart_quantity_button text-[24px] value-button flex justify-center items-center"
+                                        id="increase">
+                                        +</div>
+                                </form>
+                                <p class="">$<span class="">99</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart_footer px-[20px] py-[30px]">
+                    <div class="total_price flex justify-between items-center">
+                        <h5 class="section_subtitle capitalize">Subtotal</h5>
+                        <p class="">$<span class="">99</span></p>
+                    </div>
+                    <button class="common_button w-full text-[#fff] bg-[#000] mt-[20px]">Button text</button>
                 </div>
             </div>
         </div>

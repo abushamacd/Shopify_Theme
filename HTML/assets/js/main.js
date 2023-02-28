@@ -167,17 +167,32 @@ $(".cart_close").click(function () {
   $(".cart_area").removeClass("active");
 });
 
-function increaseValue() {
-  var value = parseInt(document.getElementById("number").value, 10);
-  value = isNaN(value) ? 0 : value;
-  value++;
-  document.getElementById("number").value = value;
+var incrementButton = document.getElementsByClassName("inc");
+var decrementButton = document.getElementsByClassName("dec");
+// increment
+for (var i = 0; i < incrementButton.length; i++) {
+  var button = incrementButton[i];
+  button.addEventListener("click", function (event) {
+    var buttonClicked = event.target;
+    var input = buttonClicked.parentElement.children[1];
+    var inputValue = input.value;
+    var newValue = parseInt(inputValue) + 1;
+    input.value = newValue;
+  });
 }
 
-function decreaseValue() {
-  var value = parseInt(document.getElementById("number").value, 10);
-  value = isNaN(value) ? 0 : value;
-  value < 1 ? (value = 1) : "";
-  value--;
-  document.getElementById("number").value = value;
+// decrement
+for (var i = 0; i < decrementButton.length; i++) {
+  var button = decrementButton[i];
+  button.addEventListener("click", function (event) {
+    var buttonClicked = event.target;
+    var input = buttonClicked.parentElement.children[1];
+    var inputValue = input.value;
+    if (inputValue < 1) {
+      input.value = inputValue;
+    } else {
+      var newValue = parseInt(inputValue) - 1;
+      input.value = newValue;
+    }
+  });
 }
