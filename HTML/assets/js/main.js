@@ -54,10 +54,10 @@ function myFunction() {
         };
       }
     } else {
-      mobileMenu.classList.remove("sticky");
     }
   } else {
     navbar.classList.remove("sticky_nvabar");
+    mobileMenu.classList.remove("sticky", "top-[54px]");
     notificationArea.classList.remove("sticky_top");
     cartArea.classList.remove("sticky_top");
     serachBar.classList.remove("top_0");

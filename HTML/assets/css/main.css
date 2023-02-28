@@ -181,7 +181,7 @@ input[type="number"] {
 
 .cart_area {
   top: 110px;
-  right: -110px;
+  right: 0px;
   opacity: 0;
   visibility: hidden;
   transition: 0.5s;
