@@ -467,14 +467,14 @@
     <main class="content">
         <!-- Account -->
         <section class="account md:px-[50px] px-[10px] py-[10px]">
-            <div class="bg-[#fff] md:px-[100px] md:py-[80px]">
-                <div class="account_header flex justify-between items-center">
+            <div class="bg-[#fff] md:px-[100px] px-[20px] md:py-[80px] py-[30px]">
+                <div class="account_header md:flex justify-between items-center text-center md:text-start">
                     <h1 class="account_title">Welcome back, <span class="user_name">test</span> </h1>
                     <button class="logout_button text-[24px] font_g_bold">
                         Log Out<i class="ml-[10px] fa-solid fa-right-from-bracket"></i>
                     </button>
                 </div>
-                <div class="account_footer mt-[100px] flex justify-between">
+                <div class="account_footer md:mt-[100px] flex md:flex-row flex-col-reverse justify-between gap-[30px]">
                     <div class="history">
                         <h2 class="account_footer_title">Order History</h2>
                         <p>You haven't placed any orders yet.</p>
@@ -483,20 +483,20 @@
                         <h2 class="account_footer_title">Account Details <i
                                 class="text-[35px] fa-regular fa-pen-to-square"></i>
                         </h2>
-                        <div class="user_info text-end mt-[20px] flex flex-col gap-4">
-                            <p class="flex gap-[5px] justify-end">
+                        <div class="user_info md:text-end mt-[20px] flex flex-col gap-4">
+                            <p class="flex gap-[5px] md:justify-end">
                                 <span>First Name </span>
                                 <span>last Name</span>
                             </p>
                             <p>user email</p>
                             <p>Address 1</p>
-                            <p class="flex gap-[5px] justify-end">
+                            <p class="flex gap-[5px] md:justify-end">
                                 <span>City,</span>
                                 <span>Zip code</span>
                             </p>
                             <a href="">
                                 <p class="logout_button underline text-[20px] font_g_bold">
-                                    Log Out<i class="ml-[10px] text-[20px] fa-solid fa-trash-can"></i>
+                                    Delete Account<i class="ml-[10px] text-[20px] fa-solid fa-trash-can"></i>
                                 </p>
                             </a>
                         </div>

@@ -329,5 +329,10 @@ input:focus {
     font-size: 47px;
   }
 
+  .account_footer_title {
+    font-size: 30px;
+    text-align: center;
+  }
+
   /* mainmenu */
 }
