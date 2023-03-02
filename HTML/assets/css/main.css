@@ -67,6 +67,16 @@ input[type="number"] {
   font-family: "GothamBold";
 }
 
+.account_title {
+  font-size: 80px;
+  font-family: "GothamBold";
+}
+
+.account_footer_title {
+  font-size: 47px;
+  font-family: "GothamBold";
+}
+
 .ol_fix {
   position: sticky;
 }
@@ -313,6 +323,10 @@ input:focus {
     font-size: 70px;
     font-family: "GothamBold";
     line-height: 1.11;
+  }
+
+  .account_title {
+    font-size: 47px;
   }
 
   /* mainmenu */
