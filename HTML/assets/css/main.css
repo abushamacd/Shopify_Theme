@@ -67,6 +67,10 @@ input[type="number"] {
   font-family: "GothamBold";
 }
 
+.ol_fix {
+  position: sticky;
+}
+
 /* header */
 .announcement p {
   margin: 0;
@@ -137,7 +141,7 @@ input[type="number"] {
 .mainmenu li.mega-menu:hover .mega-menu-wrapper {
   opacity: 1;
   visibility: visible;
-  top: 110px;
+  top: 75px;
   z-index: 99;
 }
 
@@ -176,11 +180,11 @@ input[type="number"] {
 .notifications_area.active {
   opacity: 1;
   visibility: visible;
-  top: 110px;
+  top: 75px;
 }
 
 .cart_area {
-  top: 110px;
+  top: 75px;
   right: 0px;
   opacity: 0;
   visibility: hidden;
@@ -190,12 +194,11 @@ input[type="number"] {
 .cart_area.active {
   opacity: 1;
   visibility: visible;
-  top: 110px;
+  top: 75px;
   right: 50px;
 }
 
 .serach_bar {
-  top: -85px;
   opacity: 0;
   visibility: hidden;
   transition: 0.3s;
@@ -204,7 +207,7 @@ input[type="number"] {
 .serach_bar.active {
   opacity: 1;
   visibility: visible;
-  top: 33px;
+  top: 0;
 }
 
 .serach_bar.active.top_0 {

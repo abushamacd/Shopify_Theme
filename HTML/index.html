@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./assets/fonts/fonts.css">
     <script src="./assets/js/jQueary.js"></script>
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
 
 </head>
 
@@ -32,7 +33,7 @@
 
     <!-- Main menu -->
     <nav id="navbar"
-        class="md:px-[70px] px-[20px] z-[999] py-[10px] flex justify-between items-center bg-[#fff] font_g_bold md:text-[18px]">
+        class="md:px-[70px] px-[20px] z-[1111] ol_fix py-[10px] flex justify-between items-center bg-[#fff] font_g_bold md:text-[18px]">
         <div class="logo md:w-[200px] w-[150px]">
             <img src="./assets/images/logo.png" alt="">
         </div>
@@ -92,19 +93,29 @@
         </div>
         <div class="navbar_action">
             <ul class="flex gap-5">
-                <li class="text-[#000] hidden md:block notification_open">
+                <li class="relative text-[#000] hidden md:block notification_open">
                     <i class="fa-regular fa-bell"></i>
+                    <sapn
+                        class="absolute top-[-10px] right-[-10px] h-5 w-5 text-[14px] rounded-full text-center text-[#fff] bg-[#356796]">
+                        3
+                    </sapn>
                 </li>
                 <li class="">
                     <i class="fa-solid fa-magnifying-glass serach_open"></i>
                 </li>
-                <li class="">
+                <li class="relative">
                     <i class="fa-solid fa-cart-shopping cart_open"></i>
+                    <sapn
+                        class="absolute top-[-10px] right-[-10px] h-5 w-5 text-[14px] rounded-full text-center text-[#fff] bg-[#356796]">
+                        3
+                    </sapn>
                 </li>
                 <li onclick="openNavbar()" id="navbar_open" class="md:hidden block">
-                    <i class="fa-solid fa-bars"></i>
+                    <button type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation"
+                        aria-controls="drawer-navigation"><i class="fa-solid fa-bars"></i></button>
                 </li>
-                <li onclick="closeNavbar()" id="navbar_close" class="hidden">
+                <li type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation"
+                    onclick="closeNavbar()" id="navbar_close" class="hidden">
                     <i class="fa-solid fa-xmark"></i>
                 </li>
             </ul>
@@ -172,10 +183,10 @@
             </div>
             <!-- serach -->
             <div id="serach_bar"
-                class="serach_bar md:px-[70px] px-[20px] h-[66px] flex justify-between items-center absolute bg-[#fff] z-[999] left-0 w-full">
+                class="serach_bar md:px-[70px] px-[20px] h-[66px] flex justify-between items-center absolute bg-[#fff] z-[999] left-0 top-0 w-full">
                 <form class="flex flex-row-reverse" action="">
                     <input type="text"
-                        class="font_aleo text-[25px] focus:outline-none text-gray-500 md:w-[1060px] w-[260px]"
+                        class="font_aleo text-[25px] border-0 focus:outline-none text-gray-500 md:w-[1060px] w-[260px]"
                         name="search" id="serach" placeholder="Search our store">
                     <button type="submit" class="md:mr-[50px] mr-[30px]"><i
                             class="fa-solid fa-magnifying-glass"></i></button>
@@ -247,91 +258,153 @@
     </nav>
 
     <!-- mobile Menu -->
-    <div id="mobile_menu" class="w-full hidden absolute top-[85px] z-[995] grid place-items-center">
-        <div class="w-full mx-auto rounded">
-            <div class="bg-[#fff] p-[15px]">
-                <!-- Menu -->
-                <!-- <div id="single_menu" class="overflow-auto transition mb-[10px] ">
-                    <div onclick="expandMobileMenu()"
-                        class="accordion-header  rounded-[3px] bg-[#fff] cursor-pointer transition p-[15px] flex justify-between items-center">
-                        <h3 class="text-[20px] font_g_bold leading-[1.11]">Cases</h3>
-                        <i class="text-[15px] fas fa-angle-down"></i>
-                    </div>
-                    <div class="accordion-content bg-[#fff] px-[15px] pt-0 overflow-hidden max-h-0">
-                        <img class="w-full h-[110px] rounded-[3px] object-cover mb-[10px]"
-                            src="./assets/images/banner/215112.jpg" alt="">
-                        <div class="single_menu mb-[10px] overflow-auto">
-                            <h3 class="menu_title pb-[5px]">iPhone Case</h3>
-                            <ul class="mobile_menu">
-                                <a href="" class="font_g_book">
-                                    <li class="font-[16px] mb-[7px] leading-[25.5px]">Item 1</li>
-                                </a>
-                                <a href="" class="font_g_book">
-                                    <li class="font-[16px]">Item 1</li>
-                                </a>
-                            </ul>
-                        </div>
-                        <div class="single_menu mb-[10px]">
-                            <h3 class="menu_title pb-[5px]">iPhone Case</h3>
-                            <ul class="mobile_menu">
-                                <a href="" class="font_g_book">
-                                    <li class="font-[16px] mb-[7px] leading-[25.5px]">Item 1</li>
-                                </a>
-                                <a href="" class="font_g_book">
-                                    <li class="font-[16px]">Item 1</li>
-                                </a>
-                            </ul>
-                        </div>
-                        <div class="single_menu mb-[10px]">
-                            <h3 class="menu_title pb-[5px]">iPhone Case</h3>
-                            <ul class="mobile_menu">
-                                <a href="" class="font_g_book">
-                                    <li class="font-[16px] mb-[7px] leading-[25.5px]">Item 1</li>
-                                </a>
-                                <a href="" class="font_g_book">
-                                    <li class="font-[16px]">Item 1</li>
-                                </a>
-                            </ul>
-                        </div>
-                        <div class="single_menu mb-[10px]">
-                            <h3 class="menu_title pb-[5px]">iPhone Case</h3>
-                            <ul class="mobile_menu">
-                                <a href="" class="font_g_book">
-                                    <li class="font-[16px] mb-[7px] leading-[25.5px]">Item 1</li>
-                                </a>
-                                <a href="" class="font_g_book">
-                                    <li class="font-[16px]">Item 1</li>
-                                </a>
-                            </ul>
-                        </div>
-                        <div class="single_menu mb-[10px]">
-                            <h3 class="menu_title pb-[5px]">iPhone Case</h3>
-                            <ul class="mobile_menu">
-                                <a href="" class="font_g_book">
-                                    <li class="font-[16px] mb-[7px] leading-[25.5px]">Item 1</li>
-                                </a>
-                                <a href="" class="font_g_book">
-                                    <li class="font-[16px]">Item 1</li>
-                                </a>
-                            </ul>
-                        </div>
-                        <div class="single_menu mb-[10px]">
-                            <h3 class="menu_title pb-[5px]">iPhone Case</h3>
-                            <ul class="mobile_menu">
-                                <a href="" class="font_g_book">
-                                    <li class="font-[16px] mb-[7px] leading-[25.5px]">Item 1</li>
-                                </a>
-                                <a href="" class="font_g_book">
-                                    <li class="font-[16px]">Item lase</li>
-                                </a>
-                            </ul>
-                        </div>
-                    </div>
-                </div> -->
+    <div id="mobile_menu" class="mobile_menu w-full hidden absolute top-[85px] z-[995] grid place-items-center">
+        <!-- <div class="w-full mx-auto rounded"> -->
+        <div id="drawer-navigation"
+            class="absolute left-0 z-40 w-full h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-[#EFEFEF]"
+            tabindex="-1" aria-labelledby="drawer-navigation-label">
+            <div class="py-4 overflow-y-auto">
+                <ul class="space-y-3">
+                    <li
+                        class="mb-[10px] text-[#000] font_g_bold menu_title bg-[#fff] px-[15px] py-[15px] rounded-[3px] ">
+                        <a href="/">
+                            <span class="">Cases</span>
+                        </a>
+                    </li>
+                    <li
+                        class="accordion-header mb-[10px] text-[#000] font_g_bold menu_title bg-[#fff] px-[15px] py-[10px] rounded-[3px] ">
+                        <button type="button"
+                            class="flex items-center w-full  py-[10px] transition duration-75 flex justify-between items-center"
+                            aria-controls="dropdown-example-1" data-collapse-toggle="dropdown-example-1">
+                            <span class="text-[20px] font_g_bold leading-[1.11] whitespace-nowrap">E-commerce</span>
+                            <i class="text-[15px] fas fa-angle-down"></i>
+                        </button>
+                        <ul id="dropdown-example-1" class="accordion-content hidden py-2 space-y-2 pb-50px">
+                            <img class="w-full h-[110px] rounded-[3px] object-cover mb-[10px]"
+                                src="./assets/images/banner/215112.jpg" alt="">
+                            <div class="single_menu mb-[10px] overflow-auto">
+                                <h3 class="menu_title pb-[5px]">iPhone Case</h3>
+                                <ul class="mobile_menu">
+                                    <a href="" class="font_g_book">
+                                        <li class="font-[16px] mb-[7px] leading-[25.5px]">Item 1</li>
+                                    </a>
+                                    <a href="" class="font_g_book">
+                                        <li class="font-[16px] mb-[7px] leading-[25.5px]">Item 1</li>
+                                    </a>
+                                </ul>
+                            </div>
+                            <div class="single_menu mb-[10px] overflow-auto">
+                                <h3 class="menu_title pb-[5px]">iPhone Case</h3>
+                                <ul class="mobile_menu">
+                                    <a href="" class="font_g_book">
+                                        <li class="font-[16px] mb-[7px] leading-[25.5px]">Item 1</li>
+                                    </a>
+                                    <a href="" class="font_g_book">
+                                        <li class="font-[16px] mb-[7px] leading-[25.5px] mb-[10px]">Last</li>
+                                    </a>
+                                </ul>
+                            </div>
 
+                        </ul>
+                    </li>
+                    <li
+                        class="accordion-header mb-[10px] text-[#000] font_g_bold menu_title bg-[#fff] px-[15px] py-[10px] rounded-[3px] ">
+                        <button type="button"
+                            class="flex items-center w-full  py-[10px] transition duration-75 flex justify-between items-center"
+                            aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
+                            <span class="text-[20px] font_g_bold leading-[1.11] whitespace-nowrap">E-commerce</span>
+                            <i class="text-[15px] fas fa-angle-down"></i>
+                        </button>
+                        <ul id="dropdown-example" class="accordion-content hidden py-2 space-y-2 pb-50px">
+                            <img class="w-full h-[110px] rounded-[3px] object-cover mb-[10px]"
+                                src="./assets/images/banner/215112.jpg" alt="">
+                            <div class="single_menu mb-[10px] overflow-auto">
+                                <h3 class="menu_title pb-[5px]">iPhone Case</h3>
+                                <ul class="mobile_menu">
+                                    <a href="" class="font_g_book">
+                                        <li class="font-[16px] mb-[7px] leading-[25.5px]">Item 1</li>
+                                    </a>
+                                    <a href="" class="font_g_book">
+                                        <li class="font-[16px] mb-[7px] leading-[25.5px]">Item 1</li>
+                                    </a>
+                                </ul>
+                            </div>
+                            <div class="single_menu mb-[10px] overflow-auto">
+                                <h3 class="menu_title pb-[5px]">iPhone Case</h3>
+                                <ul class="mobile_menu">
+                                    <a href="" class="font_g_book">
+                                        <li class="font-[16px] mb-[7px] leading-[25.5px]">Item 1</li>
+                                    </a>
+                                    <a href="" class="font_g_book">
+                                        <li class="font-[16px] mb-[7px] leading-[25.5px] mb-[10px]">Last</li>
+                                    </a>
+                                </ul>
+                            </div>
 
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="mobile_notification">
+                <div class="notification_header flex justify-between items-center mb-[20px] ">
+                    <h1 class="capitalize md:text-[27px] text-[20px] font_g_bold">Notifications</h1>
+                    <li class="relative text-[#000] list-none right-[10px]">
+                        <i class="fa-regular fa-bell"></i>
+                        <sapn
+                            class="absolute top-[-10px] right-[-10px] h-5 w-5 text-[14px] rounded-full text-center text-[#fff] bg-[#356796]">
+                            3
+                        </sapn>
+                    </li>
+                </div>
+                <div class="notification_content ">
+                    <div class="single_notification bg-[#fff] rounded-[5px] flex items-center p-[10px] mb-[15px]">
+                        <img class="w-[110px] h-[90px] rounded-[5px] " src="./assets/images/banner/215112.jpg" alt="">
+                        <div class="notificaiton_info ml-[10px] ">
+                            <h5 class="text-[16px] font_g_bold leading-[1.11] mb-[5px] ">Expand Your English Tan
+                                Collection</h5>
+                            <p class="text-[13px] text-gray-700 font_g_book leading-[1.4em] ">The Modern Band you know
+                                and love, now
+                                available in our
+                                signature
+                                English Tan. Shop the look.</p>
+                            <p class="text-[#7f7f7f] mt-[5px] text-[13px] font_g_book leading-[1.4em] ">13 days ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="notification_content ">
+                    <div class="single_notification bg-[#fff] rounded-[5px] flex items-center p-[10px] mb-[15px]">
+                        <img class="w-[110px] h-[90px] rounded-[5px] " src="./assets/images/banner/215112.jpg" alt="">
+                        <div class="notificaiton_info ml-[10px] ">
+                            <h5 class="text-[16px] font_g_bold leading-[1.11] mb-[5px] ">Expand Your English Tan
+                                Collection</h5>
+                            <p class="text-[13px] text-gray-700 font_g_book leading-[1.4em] ">The Modern Band you know
+                                and love, now
+                                available in our
+                                signature
+                                English Tan. Shop the look.</p>
+                            <p class="text-[#7f7f7f] mt-[5px] text-[13px] font_g_book leading-[1.4em] ">13 days ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-[10px] text-[#000] font_g_bold menu_title px-[15px] h-[64px] rounded-[3px] ">
+                    <ul class=" social_icons justify-end flex gap-[15px]">
+                        <a href="" class="">
+                            <li class=""><i class="fa-brands fa-instagram"></i></li>
+                        </a>
+                        <a href="" class="">
+                            <li class=""><i class="fa-brands fa-facebook-f"></i></li>
+                        </a>
+                        <a href="" class="">
+                            <li class=""><i class="fa-brands fa-twitter"></i></i></li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="mb-[10px] text-[#000] font_g_bold menu_title px-[15px] h-[64px] rounded-[3px] "></div>
             </div>
         </div>
+
+
+        <!-- </div> -->
     </div>
     <!-- </header> -->
 
@@ -643,9 +716,13 @@
         </div>
     </footer>
 
-
+    <!-- For Mobile device overlay -->
+    <div id="sidebar_overlay"
+        class="sidebar_overlay bg-gray-900 bg-opacity-50 dark:bg-opacity-80 fixed inset-0 z-[40] transition-all duration-500 hidden">
+    </div>
 
     <!-- JS File -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <script src="./assets/js/tailwind.js"></script>
     <!-- <script src="https://kit.fontawesome.com/8cffe8c664.js" crossorigin="anonymous"></script> -->
