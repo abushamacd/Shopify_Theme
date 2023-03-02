@@ -469,40 +469,115 @@
         <section class="account md:px-[50px] px-[10px] py-[10px]">
             <div class="bg-[#fff] md:px-[100px] px-[20px] md:py-[80px] py-[30px]">
                 <div class="account_header md:flex justify-between items-center text-center md:text-start">
-                    <h1 class="account_title">Welcome back, <span class="user_name">test</span> </h1>
-                    <button class="logout_button text-[24px] font_g_bold">
-                        Log Out<i class="ml-[10px] fa-solid fa-right-from-bracket"></i>
-                    </button>
-                </div>
-                <div class="account_footer md:mt-[100px] flex md:flex-row flex-col-reverse justify-between gap-[30px]">
-                    <div class="history">
-                        <h2 class="account_footer_title">Order History</h2>
-                        <div class="order_info mt-[20px] flex flex-col gap-4">
-                            <p>You haven't placed any orders yet.</p>
-                        </div>
+                    <div class="">
+                        <h1 class="account_title">Edit Information</h1>
+                        <button class="logout_button text-[24px] font_g_bold">
+                            <i class="ml-[10px] fa-solid fa-arrow-left-long"></i> Account
+                        </button>
                     </div>
-                    <div class="Account_details">
-                        <h2 class="account_footer_title">Account Details <i
-                                class="text-[35px] fa-regular fa-pen-to-square"></i>
-                        </h2>
-                        <div class="user_info md:text-end mt-[20px] flex flex-col gap-4">
-                            <p class="flex gap-[5px] md:justify-end">
+                    <button
+                        class="font_g_bold rounded-[3px] text-[18px] px-[16px] py-[10px] text-[#fff] bg-[#000] mt-[20px] capitalize">Add
+                        New
+                        Address</button>
+                </div>
+                <div class="account_footer md:mt-[100px] md:flex justify-between">
+                    <div class="account_details md:mt-0 mt-[20px]">
+                        <h2 class="account_footer_title">Account Details </h2>
+                        <div class="user_info mt-[40px] flex flex-col gap-4">
+                            <p class="font-bold">Contact Info</p>
+                            <p class="flex gap-[5px]">
                                 <span>First Name </span>
                                 <span>last Name</span>
                             </p>
                             <p>user email</p>
+                        </div>
+                        <div class="user_info mt-[40px] flex flex-col gap-4">
+                            <p class="font-bold">Address</p>
                             <p>Address 1</p>
-                            <p class="flex gap-[5px] md:justify-end">
+                            <p class="flex gap-[5px]">
                                 <span>City,</span>
                                 <span>Zip code</span>
                             </p>
-                            <a href="">
-                                <p class="logout_button underline text-[20px] font_g_bold">
-                                    Delete Account<i class="ml-[10px] text-[20px] fa-solid fa-trash-can"></i>
-                                </p>
-                            </a>
+                        </div>
+                        <div class="flex gap-[10px]">
+                            <button
+                                class="font_g_bold rounded-[3px] text-[18px] px-[10px] py-[5px] text-[#fff] bg-[#000] mt-[20px] capitalize">Edit</button>
+                            <button
+                                class="font_g_bold rounded-[3px] text-[18px] px-[10px] py-[5px] text-[#fff] bg-[#000] mt-[20px] capitalize">Delete</button>
                         </div>
 
+                    </div>
+                    <div class="address md:w-5/12 md:mt-0 mt-[20px]">
+                        <h2 class="account_footer_title md:text-end">Add Address</h2>
+                        <div class="order_info mt-[40px] flex flex-col gap-4">
+                            <form class="" action="">
+                                <div class="flex gap-[30px]">
+                                    <div class="md:w-1/2">
+                                        <label for="fName">First Name</label>
+                                        <input
+                                            class="w-full py-[10px] mt-[5px] mb-[25px]  rounded-[3px] border-2 border-gray-200 focus:outline-none focus:border-2 focus:border-gray-200"
+                                            required type="text" name="fName" id="fName">
+                                    </div>
+                                    <div class="md:w-1/2">
+                                        <label for="lName">Last Name</label>
+                                        <input
+                                            class="w-full py-[10px] mt-[5px] mb-[25px] rounded-[3px] border-2 border-gray-200 focus:outline-none focus:border-2 focus:border-gray-200"
+                                            required type="text" name="lName" id="lName">
+                                    </div>
+                                </div>
+                                <label for="company">Company</label>
+                                <input
+                                    class="w-full py-[10px] mt-[5px] mb-[25px] rounded-[3px] border-2 border-gray-200 focus:outline-none focus:border-2 focus:border-gray-200"
+                                    required type="text" name="company" id="company">
+                                <label for="address_1">Address 1</label>
+                                <input
+                                    class="w-full py-[10px] mt-[5px] mb-[25px] rounded-[3px] border-2 border-gray-200 focus:outline-none focus:border-2 focus:border-gray-200"
+                                    required type="text" name="address_1" id="address_1">
+                                <label for="address_2">Address 2</label>
+                                <input
+                                    class="w-full py-[10px] mt-[5px] mb-[25px] rounded-[3px] border-2 border-gray-200 focus:outline-none focus:border-2 focus:border-gray-200"
+                                    required type="text" name="address_2" id="address_2">
+                                <div class="flex gap-[30px]">
+                                    <div class="md:w-1/2">
+                                        <label for="city">City</label>
+                                        <input
+                                            class="w-full py-[10px] mt-[5px] mb-[25px]  rounded-[3px] border-2 border-gray-200 focus:outline-none focus:border-2 focus:border-gray-200"
+                                            required type="text" name="city" id="city">
+                                    </div>
+                                    <div class="md:w-1/2">
+                                        <label for="country">Country</label>
+                                        <input
+                                            class="w-full py-[10px] mt-[5px] mb-[25px] rounded-[3px] border-2 border-gray-200 focus:outline-none focus:border-2 focus:border-gray-200"
+                                            required type="text" name="country" id="country">
+                                    </div>
+                                </div>
+                                <div class="flex gap-[30px]">
+                                    <div class="md:w-1/2">
+                                        <label for="zip">Zip</label>
+                                        <input
+                                            class="w-full py-[10px] mt-[5px] mb-[25px]  rounded-[3px] border-2 border-gray-200 focus:outline-none focus:border-2 focus:border-gray-200"
+                                            required type="text" name="zip" id="zip">
+                                    </div>
+                                    <div class="md:w-1/2">
+                                        <label for="phone">Phone Number</label>
+                                        <input
+                                            class="w-full py-[10px] mt-[5px] mb-[25px] rounded-[3px] border-2 border-gray-200 focus:outline-none focus:border-2 focus:border-gray-200"
+                                            required type="text" name="phone" id="phone">
+                                    </div>
+                                </div>
+                                <div class="flex justify-start items-center">
+                                    <label class="ml-[10px] order-2">Set as main
+                                        address</label>
+                                    <input name="" class=" order-1" id="" type="checkbox" value="false">
+                                </div>
+                                <div class="flex gap-[10px]">
+                                    <button type="submit"
+                                        class="font_g_bold rounded-[3px] text-[18px] px-[10px] py-[5px] text-[#fff] bg-[#000] mt-[20px] capitalize">Save</button>
+                                    <button
+                                        class="font_g_bold rounded-[3px] text-[18px] px-[10px] py-[5px] border-[1px] border-[#000] text-[#000] bg-[#fff] mt-[20px] capitalize">Cancel</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
