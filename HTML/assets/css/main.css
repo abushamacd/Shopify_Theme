@@ -250,6 +250,19 @@ input[type="number"] {
   border-radius: 5px;
 }
 
+input:focus {
+  /* outline: none !important;
+  border: none;
+  border-color: transparent !important; */
+  --tw-ring-color: transparent !important;
+}
+
+.account_form_title {
+  font-size: 80px;
+  font-family: "GothamBold";
+  line-height: 1.11;
+}
+
 /* Responsive CSS */
 @media screen and (max-width: 991px) {
   .common_button {
