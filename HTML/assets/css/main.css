@@ -275,6 +275,10 @@ input:focus {
   line-height: 1.11;
 }
 
+.input_shadow {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
 /* Responsive CSS */
 @media screen and (max-width: 991px) {
   .common_button {

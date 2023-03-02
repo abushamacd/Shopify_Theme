@@ -465,23 +465,35 @@
 
     <!-- main -->
     <main class="content">
-        <!-- Banner -->
-        <section class="banner md:px-[50px] px-[10px] py-[10px]">
-            <div class="collection_card relative">
-                <div class="about_image  relative">
-                    <img class="md:h-[300px] h-[350px] w-full object-cover bg-center"
-                        src="./assets/images/banner/439741.jpg" alt="" class="">
-                </div>
-                <div
-                    class="collection_info absolute md:top-[50px] top-[130px] left-0 right-0 my-auto text-start text-[#fff] md:p-[50px] p-[15px]">
-                    <div class="">
-                        <h1 class="font_g_bold leading-[1.11] md:text-[60px] text-[36px] text-[#fff] text-center">Cases
-                    </div>
-                </div>
+        <!-- contact -->
+        <section class="contact md:px-[50px] px-[10px] py-[10px]">
+            <div class="md:w-7/12 mx-auto md:my-[100px] border-[1px] border-[#DDDDDD] rounded-[3px]">
+                <h3 class="text-[24px] p-[20px] font_g_bold border-b-[1px] border-[#DDDDDD]">Contact Us
+                </h3>
+                <form action="" class="p-[20px]">
+                    <label class="font-bold" for="name">Full Name <span class="required text-red-500">*</span> </label>
+                    <input
+                        class="w-full py-[10px] mt-[10px] mb-[20px] rounded-[3px] border-2 border-gray-200 focus:outline-none focus:border-2 focus:border-gray-200 input_shadow"
+                        required type="text" name="name" id="name">
+                    <label class="font-bold" for="email">Email <span class="required text-red-500">*</span> </label>
+                    <input
+                        class="w-full py-[10px] mt-[10px] mb-[20px] rounded-[3px] border-2 border-gray-200 focus:outline-none focus:border-2 focus:border-gray-200 input_shadow"
+                        required type="text" name="email" id="email">
+                    <label class="font-bold" for="subject">Subject <span class="required text-red-500">*</span> </label>
+                    <input
+                        class="w-full py-[10px] mt-[10px] mb-[20px] rounded-[3px] border-2 border-gray-200 focus:outline-none focus:border-2 focus:border-gray-200 input_shadow"
+                        required type="text" name="subject" id="subject">
+                    <label class="font-bold" for="message">Messages <span class="required text-red-500">*</span>
+                    </label>
+                    <textarea
+                        class="w-full py-[10px] mt-[10px] mb-[20px] rounded-[3px] border-2 border-gray-200 focus:outline-none focus:border-2 focus:border-gray-200 input_shadow"
+                        required name="message" id="" cols="30" rows="7"></textarea>
+                    <button type="submit"
+                        class="w-full font_g_book px-[20px] py-[10px] text-[#fff] bg-[#000] mt-[20px]">Send</button>
+
+                </form>
             </div>
         </section>
-
-        <button class="common_button text-[#000] bg-[#fff] mt-[20px]">Button text</button>
     </main>
 
     <!-- footer -->
