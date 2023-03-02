@@ -309,5 +309,11 @@ input:focus {
     right: 2%;
   }
 
+  .account_form_title {
+    font-size: 70px;
+    font-family: "GothamBold";
+    line-height: 1.11;
+  }
+
   /* mainmenu */
 }
