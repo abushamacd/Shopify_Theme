@@ -159,7 +159,7 @@ menuTitle.forEach((header) => {
   });
 });
 
-// notificaiton
+// account details
 $(".account_details_open").click(function () {
   $(".address_form").removeClass("hidden").addClass("block");
 });
@@ -167,6 +167,8 @@ $(".account_details_open").click(function () {
 $(".account_details_close").click(function () {
   $(".address_form").removeClass("block").addClass("hidden");
 });
+
+// notificaiton
 $(".notification_open").click(function () {
   $(".notifications_area").addClass("active");
   overlay.classList.remove("hidden");

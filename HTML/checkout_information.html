@@ -618,88 +618,108 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="md:w-6/12 hidden md:block md:pr-[100px] md:pl-[50px] md:py-[30px]">
-                    <div class="products h-[300px] overflow-auto">
-                        <div class="product my-[12px] flex items-center gap-[15px]">
-                            <div class="relative">
-                                <img src="./assets/images/banner/81234.jpg" alt=""
-                                    class="w-[65px] h-[65px] object-cover rounded-[5px] border-[1px] border-[#C2C2C2]">
-                                <sapn
-                                    class="absolute font_g_book top-[-10px] right-[-10px] h-5 w-5 text-[14px] rounded-full text-center text-[#fff] bg-[#6d6d6d]">
-                                    1
-                                </sapn>
+                <div class="md:w-5/12 md:block md:pr-[100px] md:pl-[50px] md:py-[30px]">
+                    <div class="summary_button flex justify-between px-[20px] py-[30px]">
+                        <div class="flex items-center text-[16px]">
+                            <i class="fa-solid fa-cart-shopping text-[18px]"></i>
+                            <div class="show_order">
+                                <span class="capitalize px-1">Show order summary</span>
+                                <i class="fa-solid fa-angle-down text-[16px]"></i>
                             </div>
-                            <div class="product_info mr-[10px]">
-                                <h2 class="product_name font_g_book font-bold text-[14px]">Sport Cable - 2.0m | USB C |
-                                    Lightning
-                                </h2>
-                                <p class="variant font_g_book text-gray-500 text-[12px]">2.0M / Lightning</p>
+                            <div class="hide_order hidden">
+                                <span class="capitalize px-1">Hide order summary</span>
+                                <i class="fa-solid fa-angle-up text-[16px]"></i>
                             </div>
-                            <p class="price font_g_book font-bold text-[14px]">
-                                $ <span class="amount">24.95</span>
-                            </p>
                         </div>
-                        <div class="product my-[12px] flex items-center gap-[15px]">
-                            <div class="relative">
-                                <img src="./assets/images/banner/81234.jpg" alt=""
-                                    class="w-[65px] h-[65px] object-cover rounded-[5px] border-[1px] border-[#C2C2C2]">
-                                <sapn
-                                    class="absolute font_g_book top-[-10px] right-[-10px] h-5 w-5 text-[14px] rounded-full text-center text-[#fff] bg-[#6d6d6d]">
-                                    1
-                                </sapn>
-                            </div>
-                            <div class="product_info mr-[10px]">
-                                <h2 class="product_name font_g_book font-bold text-[14px]">Sport Cable - 2.0m | USB C |
-                                    Lightning
-                                </h2>
-                                <p class="variant font_g_book text-gray-500 text-[12px]">2.0M / Lightning</p>
-                            </div>
-                            <p class="price font_g_book font-bold text-[14px]">
-                                $ <span class="amount">24.95</span>
-                            </p>
-                        </div>
-                        <div class="product my-[12px] flex items-center gap-[15px]">
-                            <div class="relative">
-                                <img src="./assets/images/banner/81234.jpg" alt=""
-                                    class="w-[65px] h-[65px] object-cover rounded-[5px] border-[1px] border-[#C2C2C2]">
-                                <sapn
-                                    class="absolute font_g_book top-[-10px] right-[-10px] h-5 w-5 text-[14px] rounded-full text-center text-[#fff] bg-[#6d6d6d]">
-                                    1
-                                </sapn>
-                            </div>
-                            <div class="product_info mr-[10px]">
-                                <h2 class="product_name font_g_book font-bold text-[14px]">Sport Cable - 2.0m | USB C |
-                                    Lightning
-                                </h2>
-                                <p class="variant font_g_book text-gray-500 text-[12px]">2.0M / Lightning</p>
-                            </div>
-                            <p class="price font_g_book font-bold text-[14px]">
-                                $ <span class="amount">24.95</span>
-                            </p>
-                        </div>
+                        <h5 class="font_g_book text-[20px] font-bold">$<span class="amount">345.23</span></h5>
                     </div>
-                    <div class="cupon border-t-[1px] border-b-[1px] border-[#C2C2C2] py-[20px]">
-                        <form action="" class="newsletter flex gap-[10px]">
-                            <input placeholder="Gift card or discount code"
-                                class="w-full py-[8px] text-[14px] rounded-[3px] border-2 border-gray-200 focus:outline-none focus:border-2 focus:border-black"
-                                type="text" name="company" id="company">
-                            <button type="submit"
-                                class="common_button font_g_book px-[20px] text-[12px] text-[#fff] bg-[#000]">Apply</button>
-                        </form>
-                    </div>
-                    <div class="caculation border-b-[1px] border-[#C2C2C2] py-[20px]">
-                        <div class="flex justify-between items-center mb-[5px]">
-                            <h5 class="font_g_book text-[14px] ">Subtotal</h5>
-                            <h5 class="font_g_book text-[14px] font-bold ">$<span class="amount">345.23</span></h5>
+                    <div id="order_details" class="order_details hidden">
+                        <div class="products h-[300px] overflow-auto">
+                            <div class="product my-[12px] flex items-center gap-[15px]">
+                                <div class="relative w-1/6">
+                                    <img src="./assets/images/banner/81234.jpg" alt=""
+                                        class="w-[65px] h-[65px] object-cover rounded-[5px] border-[1px] border-[#C2C2C2]">
+                                    <sapn
+                                        class="absolute font_g_book top-[-10px] right-[-10px] h-5 w-5 text-[14px] rounded-full text-center text-[#fff] bg-[#6d6d6d]">
+                                        1
+                                    </sapn>
+                                </div>
+                                <div class="product_info mr-[10px]  w-4/6">
+                                    <h2 class="product_name font_g_book font-bold text-[14px]">Sportv Cable - 2.0m | USB
+                                        C |
+                                        Lightning
+                                    </h2>
+                                    <p class="variant font_g_book text-gray-500 text-[12px]">2.0M / Lightning</p>
+                                </div>
+                                <p class="price font_g_book font-bold text-[14px]  w-1/6">
+                                    $ <span class="amount">24.95</span>
+                                </p>
+                            </div>
+                            <div class="product my-[12px] flex items-center gap-[15px]">
+                                <div class="relative w-1/6">
+                                    <img src="./assets/images/banner/81234.jpg" alt=""
+                                        class="w-[65px] h-[65px] object-cover rounded-[5px] border-[1px] border-[#C2C2C2]">
+                                    <sapn
+                                        class="absolute font_g_book top-[-10px] right-[-10px] h-5 w-5 text-[14px] rounded-full text-center text-[#fff] bg-[#6d6d6d]">
+                                        1
+                                    </sapn>
+                                </div>
+                                <div class="product_info mr-[10px]  w-4/6">
+                                    <h2 class="product_name font_g_book font-bold text-[14px]">Sportv Cable - 2.0m | USB
+                                        C |
+                                        Lightning
+                                    </h2>
+                                    <p class="variant font_g_book text-gray-500 text-[12px]">2.0M / Lightning</p>
+                                </div>
+                                <p class="price font_g_book font-bold text-[14px]  w-1/6">
+                                    $ <span class="amount">24.95</span>
+                                </p>
+                            </div>
+                            <div class="product my-[12px] flex items-center gap-[15px]">
+                                <div class="relative w-1/6">
+                                    <img src="./assets/images/banner/81234.jpg" alt=""
+                                        class="w-[65px] h-[65px] object-cover rounded-[5px] border-[1px] border-[#C2C2C2]">
+                                    <sapn
+                                        class="absolute font_g_book top-[-10px] right-[-10px] h-5 w-5 text-[14px] rounded-full text-center text-[#fff] bg-[#6d6d6d]">
+                                        1
+                                    </sapn>
+                                </div>
+                                <div class="product_info mr-[10px]  w-4/6">
+                                    <h2 class="product_name font_g_book font-bold text-[14px]">Sportv Cable - 2.0m | USB
+                                        C |
+                                        Lightning
+                                    </h2>
+                                    <p class="variant font_g_book text-gray-500 text-[12px]">2.0M / Lightning</p>
+                                </div>
+                                <p class="price font_g_book font-bold text-[14px]  w-1/6">
+                                    $ <span class="amount">24.95</span>
+                                </p>
+                            </div>
                         </div>
-                        <div class="flex justify-between items-center mb-[5px]">
-                            <h5 class="font_g_book text-[14px] ">Shipping</h5>
-                            <h5 class="font_g_book text-[12px] font-bold text-[#6d6d6d] ">Calculated at next step</h5>
+                        <div class="cupon border-t-[1px] border-b-[1px] border-[#C2C2C2] py-[20px]">
+                            <form action="" class="newsletter flex gap-[10px]">
+                                <input placeholder="Gift card or discount code"
+                                    class="w-full py-[8px] text-[14px] rounded-[3px] border-2 border-gray-200 focus:outline-none focus:border-2 focus:border-black"
+                                    type="text" name="company" id="company">
+                                <button type="submit"
+                                    class="common_button font_g_book px-[20px] text-[12px] text-[#fff] bg-[#000]">Apply</button>
+                            </form>
                         </div>
-                    </div>
-                    <div class="flex justify-between items-center my-[20px]">
-                        <h5 class="font_g_book text-[14px] ">Total</h5>
-                        <h5 class="font_g_book text-[20px] font-bold ">$<span class="amount">345.23</span></h5>
+                        <div class="caculation border-b-[1px] border-[#C2C2C2] py-[20px]">
+                            <div class="flex justify-between items-center mb-[5px]">
+                                <h5 class="font_g_book text-[14px] ">Subtotal</h5>
+                                <h5 class="font_g_book text-[14px] font-bold ">$<span class="amount">345.23</span></h5>
+                            </div>
+                            <div class="flex justify-between items-center mb-[5px]">
+                                <h5 class="font_g_book text-[14px] ">Shipping</h5>
+                                <h5 class="font_g_book text-[12px] font-bold text-[#6d6d6d] ">Calculated at next step
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center my-[20px]">
+                            <h5 class="font_g_book text-[14px] ">Total</h5>
+                            <h5 class="font_g_book text-[20px] font-bold ">$<span class="amount">345.23</span></h5>
+                        </div>
                     </div>
                 </div>
             </div>
