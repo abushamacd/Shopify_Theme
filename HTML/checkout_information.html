@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThmsPark</title>
+    <!-- CSS File -->
+    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script> -->
+    <link rel="stylesheet" href="./assets/fonts/fonts.css">
+    <script src="./assets/js/jQueary.js"></script>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <!-- <header> -->
+    <!-- announcement bar -->
+    <div class="header_top font_g_bold text-center text-[16px] py-[5px] px-[20px] bg-[#000000] relative z-[1111]">
+        <div class="announcement font-bold ">
+            <p class="animate-text">
+                <span>Welcome to ThmsPark</span>
+                <span>10% discount</span>
+                <span>Free Shipping</span>
+                <span>Easy Return</span>
+                <span>Worldwide delivery</span>
+            </p>
+        </div>
+    </div>
+
+    <!-- Main menu -->
+    <nav id="navbar"
+        class="md:px-[70px] px-[20px] z-[1111] ol_fix py-[10px] flex justify-between items-center bg-[#fff] font_g_bold md:text-[18px]">
+        <div class="logo md:w-[200px] w-[150px] md:mr-[30px]">
+            <img src="./assets/images/logo.png" alt="">
+        </div>
+        <div class="mainmenu hidden md:block">
+            <ul id="">
+                <li class="mega-menu relative inline-block text-[#000]"><a class="" href="">Pages</a>
+                    <div id="desktop_menu" class="mega-menu-wrapper rounded-[5px]">
+                        <div
+                            class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-[40px] py-[50px] px-[90px] max-h-[500px] overflow-auto">
+                            <div class="single_menu">
+                                <img class="w-full h-[130px] rounded-[3px] object-cover"
+                                    src="./assets/images/banner/215112.jpg" alt="">
+                                <div class="single_menu mt-[28px] px-[15px]">
+                                    <h4 class="menu_title leading-[29px] mb-[12px]">Collection Name</h4>
+                                    <ul class="font_g_book text-[16px]">
+                                        <li class="mb-[5px]"> <a href="">Items 1</a> </li>
+                                        <li class="mb-[5px]"> <a href="">Items 1</a> </li>
+                                        <li class="mb-[5px]"> <a href="">Items 1</a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="single_menu">
+                                <img class="w-full h-[130px] rounded-[3px] object-cover"
+                                    src="./assets/images/banner/215112.jpg" alt="">
+                                <div class="single_menu mt-[28px] px-[15px]">
+                                    <h4 class="menu_title leading-[29px] mb-[12px]">Collection Name</h4>
+                                    <ul class="font_g_book text-[16px]">
+                                        <li class="mb-[5px]"> <a href="">Items 1</a> </li>
+                                        <li class="mb-[5px]"> <a href="">Items 1</a> </li>
+                                        <li class="mb-[5px]"> <a href="">Items 1</a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="single_menu">
+                                <img class="w-full h-[130px] rounded-[3px] object-cover"
+                                    src="./assets/images/banner/215112.jpg" alt="">
+                                <div class="single_menu mt-[28px] px-[15px]">
+                                    <h4 class="menu_title leading-[29px] mb-[12px]">Collection Name</h4>
+                                    <ul class="font_g_book text-[16px]">
+                                        <li class="mb-[5px]"> <a href="">Items 1</a> </li>
+                                        <li class="mb-[5px]"> <a href="">Items 1</a> </li>
+                                        <li class="mb-[5px]"> <a href="">Items 1</a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="single_menu">
+                                <img class="w-full h-[130px] rounded-[3px] object-cover"
+                                    src="./assets/images/banner/215112.jpg" alt="">
+                                <div class="single_menu mt-[28px] px-[15px]">
+                                    <h4 class="menu_title leading-[29px] mb-[12px]">Collection Name</h4>
+                                    <ul class="font_g_book text-[16px]">
+                                        <li class="mb-[5px]"> <a href="">Items 1</a> </li>
+                                        <li class="mb-[5px]"> <a href="">Items 1</a> </li>
+                                        <li class="mb-[5px]"> <a href="">Items 1</a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="mega-menu relative inline-block text-[#000]"><a class="" href="">Pages</a>
+                    <div id="desktop_menu" class="mega-menu-wrapper rounded-[5px]">
+                        <div
+                            class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-[40px] py-[50px] px-[90px]">
+                            <div class="single_menu">
+                                <img class="w-full h-[130px] rounded-[3px] object-cover"
+                                    src="./assets/images/banner/215112.jpg" alt="">
+                                <div class="single_menu mt-[28px] px-[15px]">
+                                    <h4 class="menu_title leading-[29px] mb-[12px]">Collection Name</h4>
+                                    <ul class="font_g_book text-[16px]">
+                                        <li class="mb-[5px]"> <a href="">Items 1</a> </li>
+                                        <li class="mb-[5px]"> <a href="">Items 1</a> </li>
+                                        <li class="mb-[5px]"> <a href="">Items 1</a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="mega-menu relative inline-block text-[#000]"><a class="" href="">Pages</a>
+                    <div id="desktop_menu" class="mega-menu-wrapper rounded-[5px]">
+                        <div
+                            class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-[40px] py-[50px] px-[90px]">
+                            <div class="single_menu">
+                                <img class="w-full h-[130px] rounded-[3px] object-cover"
+                                    src="./assets/images/banner/215112.jpg" alt="">
+                                <div class="single_menu mt-[28px] px-[15px]">
+                                    <h4 class="menu_title leading-[29px] mb-[12px]">Collection Name</h4>
+                                    <ul class="font_g_book text-[16px]">
+                                        <li class="mb-[5px]"> <a href="">Items 1</a> </li>
+                                        <li class="mb-[5px]"> <a href="">Items 1</a> </li>
+                                        <li class="mb-[5px]"> <a href="">Items 1</a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="single_menu">
+                                <img class="w-full h-[130px] rounded-[3px] object-cover"
+                                    src="./assets/images/banner/215112.jpg" alt="">
+                                <div class="single_menu mt-[28px] px-[15px]">
+                                    <h4 class="menu_title leading-[29px] mb-[12px]">Collection Name</h4>
+                                    <ul class="font_g_book text-[16px]">
+                                        <li class="mb-[5px]"> <a href="">Items 1</a> </li>
+                                        <li class="mb-[5px]"> <a href="">Items 1</a> </li>
+                                        <li class="mb-[5px]"> <a href="">Items 1</a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar_action">
+            <ul class="flex gap-5">
+                <li class="relative text-[#000] hidden md:block notification_open">
+                    <i class="fa-regular fa-bell"></i>
+                    <sapn
+                        class="absolute top-[-10px] right-[-10px] h-5 w-5 text-[14px] rounded-full text-center text-[#fff] bg-[#356796]">
+                        3
+                    </sapn>
+                </li>
+                <li class="">
+                    <i class="fa-solid fa-magnifying-glass serach_open"></i>
+                </li>
+                <li class="relative">
+                    <i class="fa-solid fa-cart-shopping cart_open"></i>
+                    <sapn
+                        class="absolute top-[-10px] right-[-10px] h-5 w-5 text-[14px] rounded-full text-center text-[#fff] bg-[#356796]">
+                        3
+                    </sapn>
+                </li>
+                <li onclick="openNavbar()" id="navbar_open" class="md:hidden block">
+                    <button type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation"
+                        aria-controls="drawer-navigation"><i class="fa-solid fa-bars"></i></button>
+                </li>
+                <li type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation"
+                    onclick="closeNavbar()" id="navbar_close" class="hidden">
+                    <i class="fa-solid fa-xmark"></i>
+                </li>
+            </ul>
+            <!-- Notification -->
+            <div id="notifications_area"
+                class="notifications_area h-[500px] overflow-auto bg-[#FFFFFF] absolute z-[999] right-[150px] w-[540px] p-[20px] rounded-[5px]">
+                <div class="notification_header flex justify-between items-center mb-[20px] ">
+                    <h1 class="capitalize md:text-[27px] text-[20px] font_g_bold">Notifications</h1>
+                    <i class="fa-solid fa-xmark notification_close"></i>
+                </div>
+                <div class="notification_content ">
+                    <div class="single_notification flex p-[10px] mb-[15px]">
+                        <img class="w-[180px] h-[120px] rounded-[5px] " src="./assets/images/banner/215112.jpg" alt="">
+                        <div class="notificaiton_info ml-[10px] ">
+                            <h5 class="text-[18px] font_g_bold leading-[1.11] mb-[5px] ">Expand Your English Tan
+                                Collection</h5>
+                            <p class="text-[13px] text-gray-700 font_g_book leading-[1.4em] ">The Modern Band you know
+                                and love, now
+                                available in our
+                                signature
+                                English Tan. Shop the look.</p>
+                            <p class="text-[#7f7f7f] mt-[5px] text-[13px] font_g_book leading-[1.4em] ">13 days ago</p>
+                        </div>
+                    </div>
+                    <div class="single_notification flex p-[10px] mb-[15px]">
+                        <img class="w-[180px] h-[120px] rounded-[5px] " src="./assets/images/banner/215112.jpg" alt="">
+                        <div class="notificaiton_info ml-[10px] ">
+                            <h5 class="text-[18px] font_g_bold leading-[1.11] mb-[5px] ">Expand Your English Tan
+                                Collection</h5>
+                            <p class="text-[13px] text-gray-700 font_g_book leading-[1.4em] ">The Modern Band you know
+                                and love, now
+                                available in our
+                                signature
+                                English Tan. Shop the look.</p>
+                            <p class="text-[#7f7f7f] mt-[5px] text-[13px] font_g_book leading-[1.4em] ">13 days ago</p>
+                        </div>
+                    </div>
+                    <div class="single_notification flex p-[10px] mb-[15px]">
+                        <img class="w-[180px] h-[120px] rounded-[5px] " src="./assets/images/banner/215112.jpg" alt="">
+                        <div class="notificaiton_info ml-[10px] ">
+                            <h5 class="text-[18px] font_g_bold leading-[1.11] mb-[5px] ">Expand Your English Tan
+                                Collection</h5>
+                            <p class="text-[13px] text-gray-700 font_g_book leading-[1.4em] ">The Modern Band you know
+                                and love, now
+                                available in our
+                                signature
+                                English Tan. Shop the look.</p>
+                            <p class="text-[#7f7f7f] mt-[5px] text-[13px] font_g_book leading-[1.4em] ">13 days ago</p>
+                        </div>
+                    </div>
+                    <div class="single_notification flex p-[10px] mb-[15px]">
+                        <img class="w-[180px] h-[120px] rounded-[5px] " src="./assets/images/banner/215112.jpg" alt="">
+                        <div class="notificaiton_info ml-[10px] ">
+                            <h5 class="text-[18px] font_g_bold leading-[1.11] mb-[5px] ">Expand Your English Tan
+                                Collection</h5>
+                            <p class="text-[13px] text-gray-700 font_g_book leading-[1.4em] ">The Modern Band you know
+                                and love, now
+                                available in our
+                                signature
+                                English Tan. Shop the look.</p>
+                            <p class="text-[#7f7f7f] mt-[5px] text-[13px] font_g_book leading-[1.4em] ">13 days ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- serach -->
+            <div id="serach_bar"
+                class="serach_bar md:px-[70px] px-[20px] h-[66px] flex justify-between items-center absolute bg-[#fff] z-[999] left-0 top-0 w-full">
+                <form class="flex flex-row-reverse" action="">
+                    <input type="text"
+                        class="font_aleo text-[25px] border-0 focus:outline-none text-gray-500 md:w-[1060px] w-[260px]"
+                        name="search" id="serach" placeholder="Search our store">
+                    <button type="submit" class="md:mr-[50px] mr-[30px]"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <i class="serach_close fa-solid fa-xmark"></i>
+            </div>
+            <!-- cart -->
+            <div id="cart_area"
+                class="cart_area bg-[#FFFFFF] absolute z-[999] md:w-[540px] w-[96%] p-[20px] rounded-[5px]">
+                <div class="cart_header flex justify-between items-center mb-[20px] ">
+                    <h1 class="capitalize md:text-[27px] text-[20px] font_g_bold">Your Cart</h1>
+                    <i class="fa-solid fa-xmark cart_close"></i>
+                </div>
+                <div class="cart_content h-[200px] overflow-auto">
+                    <div class="single_cart flex p-[10px] mb-[15px]">
+                        <img class="w-[80px] h-[90px] rounded-[5px] " src="./assets/images/banner/215112.jpg" alt="">
+                        <div class="cart_info ml-[10px] w-full ">
+                            <h5 class="text-[18px] font_g_bold leading-[1.11] mb-[5px] ">Expand Your English Tan
+                                Collection</h5>
+                            <p class="text-[13px] text-gray-700 font_g_book leading-[1.4em] ">Lorem ipsum dolor sit amet
+                                consectetur adipisicing.</p>
+                            <div class="quantity_price flex justify-between items-center mt-[15px]">
+                                <form class="flex flex-row h-[30px] rounded-[3px]">
+                                    <div class="dec rounded-l-[3px] border-[1px] px-3 value-button cart_quantity_button flex justify-center items-center font_aleo"
+                                        id="decrease">-
+                                    </div>
+                                    <input class="font_aleo border-[1px] pl-4 add_to_cart_input w-[50px]" type="number"
+                                        id="number" value="0">
+                                    <div class="inc rounded-r-[3px] font_aleo border-[1px] px-3 cart_quantity_button text-[24px] value-button flex justify-center items-center"
+                                        id="increase">
+                                        +</div>
+                                </form>
+                                <p class="">$<span class="">99</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_cart flex p-[10px] mb-[15px]">
+                        <img class="w-[80px] h-[90px] rounded-[5px] " src="./assets/images/banner/215112.jpg" alt="">
+                        <div class="cart_info ml-[10px] w-full ">
+                            <h5 class="text-[18px] font_g_bold leading-[1.11] mb-[5px] ">Expand Your English Tan
+                                Collection</h5>
+                            <p class="text-[13px] text-gray-700 font_g_book leading-[1.4em] ">Lorem ipsum dolor sit amet
+                                consectetur adipisicing.</p>
+                            <div class="quantity_price flex justify-between items-center mt-[15px]">
+                                <form class="flex flex-row h-[30px] rounded-[3px]">
+                                    <div class="dec rounded-l-[3px] border-[1px] px-3 value-button cart_quantity_button flex justify-center items-center font_aleo"
+                                        id="decrease">-
+                                    </div>
+                                    <input class="font_aleo border-[1px] pl-4 add_to_cart_input w-[50px]" type="number"
+                                        id="number" value="0">
+                                    <div class="inc rounded-r-[3px] font_aleo border-[1px] px-3 cart_quantity_button text-[24px] value-button flex justify-center items-center"
+                                        id="increase">
+                                        +</div>
+                                </form>
+                                <p class="">$<span class="">99</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart_footer px-[20px] py-[30px]">
+                    <div class="total_price flex justify-between items-center">
+                        <h5 class="section_subtitle capitalize">Subtotal</h5>
+                        <p class="">$<span class="">99</span></p>
+                    </div>
+                    <button class="common_button w-full text-[#fff] bg-[#000] mt-[20px]">Button text</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- mobile Menu -->
+    <div id="mobile_menu" class="mobile_menu w-full hidden absolute top-[85px] z-[995] grid place-items-center">
+        <!-- <div class="w-full mx-auto rounded"> -->
+        <div id="drawer-navigation"
+            class="absolute left-0 z-40 w-full h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-[#EFEFEF]"
+            tabindex="-1" aria-labelledby="drawer-navigation-label">
+            <div class="py-4 overflow-y-auto">
+                <ul class="space-y-3">
+                    <li
+                        class="mb-[10px] text-[#000] font_g_bold menu_title bg-[#fff] px-[15px] py-[15px] rounded-[3px] ">
+                        <a href="/">
+                            <span class="">Cases</span>
+                        </a>
+                    </li>
+                    <li
+                        class="accordion-header mb-[10px] text-[#000] font_g_bold menu_title bg-[#fff] px-[15px] py-[10px] rounded-[3px] ">
+                        <button type="button"
+                            class="flex items-center w-full  py-[10px] transition duration-75 flex justify-between items-center"
+                            aria-controls="dropdown-example-1" data-collapse-toggle="dropdown-example-1">
+                            <span class="text-[20px] font_g_bold leading-[1.11] whitespace-nowrap">E-commerce</span>
+                            <i class="text-[15px] fas fa-angle-down"></i>
+                        </button>
+                        <ul id="dropdown-example-1" class="accordion-content hidden py-2 space-y-2 pb-50px">
+                            <img class="w-full h-[110px] rounded-[3px] object-cover mb-[10px]"
+                                src="./assets/images/banner/215112.jpg" alt="">
+                            <div class="single_menu mb-[10px] overflow-auto">
+                                <h3 class="menu_title pb-[5px]">iPhone Case</h3>
+                                <ul class="mobile_menu">
+                                    <a href="" class="font_g_book">
+                                        <li class="font-[16px] mb-[7px] leading-[25.5px]">Item 1</li>
+                                    </a>
+                                    <a href="" class="font_g_book">
+                                        <li class="font-[16px] mb-[7px] leading-[25.5px]">Item 1</li>
+                                    </a>
+                                </ul>
+                            </div>
+                            <div class="single_menu mb-[10px] overflow-auto">
+                                <h3 class="menu_title pb-[5px]">iPhone Case</h3>
+                                <ul class="mobile_menu">
+                                    <a href="" class="font_g_book">
+                                        <li class="font-[16px] mb-[7px] leading-[25.5px]">Item 1</li>
+                                    </a>
+                                    <a href="" class="font_g_book">
+                                        <li class="font-[16px] mb-[7px] leading-[25.5px] mb-[10px]">Last</li>
+                                    </a>
+                                </ul>
+                            </div>
+
+                        </ul>
+                    </li>
+                    <li
+                        class="accordion-header mb-[10px] text-[#000] font_g_bold menu_title bg-[#fff] px-[15px] py-[10px] rounded-[3px] ">
+                        <button type="button"
+                            class="flex items-center w-full  py-[10px] transition duration-75 flex justify-between items-center"
+                            aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
+                            <span class="text-[20px] font_g_bold leading-[1.11] whitespace-nowrap">E-commerce</span>
+                            <i class="text-[15px] fas fa-angle-down"></i>
+                        </button>
+                        <ul id="dropdown-example" class="accordion-content hidden py-2 space-y-2 pb-50px">
+                            <img class="w-full h-[110px] rounded-[3px] object-cover mb-[10px]"
+                                src="./assets/images/banner/215112.jpg" alt="">
+                            <div class="single_menu mb-[10px] overflow-auto">
+                                <h3 class="menu_title pb-[5px]">iPhone Case</h3>
+                                <ul class="mobile_menu">
+                                    <a href="" class="font_g_book">
+                                        <li class="font-[16px] mb-[7px] leading-[25.5px]">Item 1</li>
+                                    </a>
+                                    <a href="" class="font_g_book">
+                                        <li class="font-[16px] mb-[7px] leading-[25.5px]">Item 1</li>
+                                    </a>
+                                </ul>
+                            </div>
+                            <div class="single_menu mb-[10px] overflow-auto">
+                                <h3 class="menu_title pb-[5px]">iPhone Case</h3>
+                                <ul class="mobile_menu">
+                                    <a href="" class="font_g_book">
+                                        <li class="font-[16px] mb-[7px] leading-[25.5px]">Item 1</li>
+                                    </a>
+                                    <a href="" class="font_g_book">
+                                        <li class="font-[16px] mb-[7px] leading-[25.5px] mb-[10px]">Last</li>
+                                    </a>
+                                </ul>
+                            </div>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="mobile_notification">
+                <div class="notification_header flex justify-between items-center mb-[20px] ">
+                    <h1 class="capitalize md:text-[27px] text-[20px] font_g_bold">Notifications</h1>
+                    <li class="relative text-[#000] list-none right-[10px]">
+                        <i class="fa-regular fa-bell"></i>
+                        <sapn
+                            class="absolute top-[-10px] right-[-10px] h-5 w-5 text-[14px] rounded-full text-center text-[#fff] bg-[#356796]">
+                            3
+                        </sapn>
+                    </li>
+                </div>
+                <div class="notification_content ">
+                    <div class="single_notification bg-[#fff] rounded-[5px] flex items-center p-[10px] mb-[15px]">
+                        <img class="w-[110px] h-[90px] rounded-[5px] " src="./assets/images/banner/215112.jpg" alt="">
+                        <div class="notificaiton_info ml-[10px] ">
+                            <h5 class="text-[16px] font_g_bold leading-[1.11] mb-[5px] ">Expand Your English Tan
+                                Collection</h5>
+                            <p class="text-[13px] text-gray-700 font_g_book leading-[1.4em] ">The Modern Band you know
+                                and love, now
+                                available in our
+                                signature
+                                English Tan. Shop the look.</p>
+                            <p class="text-[#7f7f7f] mt-[5px] text-[13px] font_g_book leading-[1.4em] ">13 days ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="notification_content ">
+                    <div class="single_notification bg-[#fff] rounded-[5px] flex items-center p-[10px] mb-[15px]">
+                        <img class="w-[110px] h-[90px] rounded-[5px] " src="./assets/images/banner/215112.jpg" alt="">
+                        <div class="notificaiton_info ml-[10px] ">
+                            <h5 class="text-[16px] font_g_bold leading-[1.11] mb-[5px] ">Expand Your English Tan
+                                Collection</h5>
+                            <p class="text-[13px] text-gray-700 font_g_book leading-[1.4em] ">The Modern Band you know
+                                and love, now
+                                available in our
+                                signature
+                                English Tan. Shop the look.</p>
+                            <p class="text-[#7f7f7f] mt-[5px] text-[13px] font_g_book leading-[1.4em] ">13 days ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-[10px] text-[#000] font_g_bold menu_title px-[15px] h-[64px] rounded-[3px] ">
+                    <ul class=" social_icons justify-end flex gap-[15px]">
+                        <a href="" class="">
+                            <li class=""><i class="fa-brands fa-instagram"></i></li>
+                        </a>
+                        <a href="" class="">
+                            <li class=""><i class="fa-brands fa-facebook-f"></i></li>
+                        </a>
+                        <a href="" class="">
+                            <li class=""><i class="fa-brands fa-twitter"></i></i></li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="mb-[10px] text-[#000] font_g_bold menu_title px-[15px] h-[64px] rounded-[3px] "></div>
+            </div>
+        </div>
+
+
+        <!-- </div> -->
+    </div>
+    <!-- </header> -->
+
+    <!-- main -->
+    <main class="content">
+        <!-- Banner -->
+        <section class="banner">
+            <div class="collection_card relative">
+                <div class="about_image relative">
+                    <img class="md:h-[200px] h-[100px] w-full object-cover bg-center"
+                        src="./assets/images/banner/439741.jpg" alt="" class="">
+                </div>
+                <div
+                    class="collection_info absolute bottom-0 left-0 text-start text-[#fff] md:px-[100px] px-[20px] py-[30px]">
+                    <div class="">
+                        <h1 class="font_g_bold leading-[1.11] md:text-[60px] text-[36px] text-[#fff] text-center"> Nomad
+                        </h1>
+                        <!-- <img class="h-[50px]" src="./assets/images/logo.png" alt=""> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Information -->
+        <section class="information">
+            <div class="flex md:flex-row flex-col-reverse flex-col justify-center">
+                <div
+                    class="md:w-7/12 bg-[#fff] border-r-[1px] border-[#ddd] md:pl-[100px] md:pr-[50px] md:py-[30px] px-[15px] py-[15px] ">
+                    <nav class="breadcumb md:pt-[0px] ">
+                        <ul class="">
+                            <li class="text-[12px] font_g_book inline-block">
+                                <a href="">Information</a>
+                                <i class="text-[12px] mx-[5px] fa-solid fa-angle-right"></i>
+                            </li>
+                            <li class="text-[12px] font_g_book inline-block">
+                                <a href="">Shipping</a>
+                                <i class="text-[12px] mx-[5px] fa-solid fa-angle-right"></i>
+                            </li>
+                            <li class="text-[12px] font_g_book inline-block">
+                                <a href="">Payment</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div
+                        class="checkout_button rounded-[3px] border-[1px] border-[#ddd] relative mt-[20px] md:px-0 px-[20px]">
+                        <span
+                            class="absolute md:left-[38%]  left-[25%]  md:right-[38%] right-[25%]  top-[-10px] mx-auto text-center bg-[#fff] inline-block mx-auto font_g_book text-[13px]">Express
+                            Checkout</span>
+                        <div
+                            class="button_group grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:sm\:grid-cols-4 gap-[10px] md:p-[20px] py-[20px]">
+                            <div
+                                class="single_button opacity-90 hover:opacity-100 duration-300 bg-[#5a31f4] rounded-[3px]  py-[10px]">
+                                <img class="h-[20px] mx-auto" src="./assets/images/payment/ShopPay_White.svg" alt="">
+                            </div>
+                            <div
+                                class="single_button opacity-90 hover:opacity-100 duration-300 bg-[#fad676] rounded-[3px]  py-[10px]">
+                                <img class="h-[20px] mx-auto" src="./assets/images/payment/Amazon_Pay_logo.svg" alt="">
+                            </div>
+                            <div
+                                class="single_button opacity-90 hover:opacity-100 duration-300 bg-[#ffc439] rounded-[3px]  py-[10px]">
+                                <img class="h-[20px] mx-auto" src="./assets/images/payment/PayPal.svg" alt="">
+                            </div>
+                            <div
+                                class="single_button opacity-90 hover:opacity-100 duration-300 bg-[#000] rounded-[3px]  py-[10px]">
+                                <img class="h-[20px] mx-auto" src="./assets/images/payment/Google_Pay_Logo.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center gap-[10px] py-[30px]">
+                        <hr class="w-full">
+                        <span class="text-[14px] text-gray-500 font_g_book ">OR</span>
+                        <hr class="w-full">
+                    </div>
+                    <!-- shipping address form -->
+                    <form action="" class="shipping_form font_g_book">
+                        <div class="md:flex justify-between items-end">
+                            <h3 class="font_g_book font-bold text-[18px]">Contact information</h3>
+                            <p class="flex font_g_book text-[14px] gap-[5px] md:mt-0 mt-[10px]">
+                                <span class="text-gray-500">Already have an account?</span>
+                                <a href="">
+                                    Log in
+                                </a>
+                            </p>
+                        </div>
+                        <input placeholder="Email"
+                            class="w-full py-[8px]  text-[14px] mt-[25px] mb-[10px] rounded-[3px] border-2 border-gray-200 focus:outline-none focus:border-2 focus:border-black"
+                            required type="email" name="email" id="email">
+                        <div class="flex justify-start items-center">
+                            <label class="ml-[10px] text-[14px] order-2">Email me with news and offers</label>
+                            <input name="" class="rounded-[3px] border-[2px] border-gray-200 order-1" id=""
+                                type="checkbox" value="false">
+                        </div>
+                        <h3 class="font_g_book font-bold text-[18px]  mb-[25px] mt-[30px]">Shipping address</h3>
+                        <input placeholder="Country"
+                            class="w-full py-[8px]  text-[14px] mb-[10px] rounded-[3px] border-2 border-gray-200 focus:outline-none focus:border-2 focus:border-black"
+                            required type="text" name="country" id="country">
+                        <div class="flex gap-[10px]">
+                            <div class="md:w-1/2">
+                                <input placeholder="First Name (optional) "
+                                    class="w-full py-[8px] text-[14px] mb-[10px] rounded-[3px] border-2 border-gray-200 focus:outline-none focus:border-2 focus:border-black"
+                                    type="text" name="fName" id="fName">
+                            </div>
+                            <div class="md:w-1/2">
+                                <input placeholder="Last Name"
+                                    class="w-full py-[8px] text-[14px] mb-[10px] rounded-[3px] border-2 border-gray-200 focus:outline-none focus:border-2 focus:border-black"
+                                    required type="text" name="lName" id="lName">
+                            </div>
+                        </div>
+                        <input placeholder="Company (optional)"
+                            class="w-full py-[8px] text-[14px] mb-[10px] rounded-[3px] border-2 border-gray-200 focus:outline-none focus:border-2 focus:border-black"
+                            type="text" name="company" id="company">
+                        <input placeholder="Address"
+                            class="w-full py-[8px] text-[14px] mb-[10px] rounded-[3px] border-2 border-gray-200 focus:outline-none focus:border-2 focus:border-black"
+                            required type="text" name="address" id="address">
+                        <input placeholder="Apartment,Suit, etc (optional)"
+                            class="w-full py-[8px] text-[14px] mb-[10px] rounded-[3px] border-2 border-gray-200 focus:outline-none focus:border-2 focus:border-black"
+                            type="text" name="apartment" id="apartment">
+                        <div class="flex gap-[10px]">
+                            <div class="md:w-1/2">
+                                <input placeholder="City"
+                                    class="w-full py-[8px] text-[14px] mb-[10px] rounded-[3px] border-2 border-gray-200 focus:outline-none focus:border-2 focus:border-black"
+                                    required type="text" name="city" id="city">
+                            </div>
+                            <div class="md:w-1/2">
+                                <input placeholder="Post Code"
+                                    class="w-full py-[8px] text-[14px] mb-[10px] rounded-[3px] border-2 border-gray-200 focus:outline-none focus:border-2 focus:border-black"
+                                    required type="text" name="pcode" id="pcode">
+                            </div>
+                        </div>
+                        <input placeholder="phone"
+                            class="w-full py-[8px] text-[14px] mb-[10px] rounded-[3px] border-2 border-gray-200 focus:outline-none focus:border-2 focus:border-black"
+                            required type="text" name="phone" id="phone">
+                        <div class="flex justify-start items-center">
+                            <label class="ml-[10px] text-[14px] order-2">Text me with news and offers</label>
+                            <input name="" class="rounded-[3px] border-[2px] border-gray-200 order-1" id=""
+                                type="checkbox" value="false">
+                        </div>
+                        <div class="flex justify-end">
+                            <button type="submit"
+                                class="common_button w-full md:w-2/6 font_g_book px-[20px] text-[12px] text-[#fff] bg-[#000] mt-[20px] md:mb-[50px] mb-[20px]">Continue
+                                to
+                                Shipping</button>
+                        </div>
+                    </form>
+                    <hr>
+                    <nav class="shipping_policy_menu mt-[20px]">
+                        <ul class="">
+                            <li class="inline-block mr-[10px] text-[12px] font_g_book"><a href="" class="">
+                                    Refund policy
+                                </a></li>
+                            <li class="inline-block mr-[10px] text-[12px] font_g_book"><a href="" class="">
+                                    Privacy policy
+                                </a></li>
+                            <li class="inline-block mr-[10px] text-[12px] font_g_book"><a href="" class="">
+                                    Terms of service
+                                </a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="md:w-6/12 hidden md:block md:pr-[100px] md:pl-[50px] md:py-[30px]">
+                    <div class="products h-[300px] overflow-auto">
+                        <div class="product my-[12px] flex items-center gap-[15px]">
+                            <div class="relative">
+                                <img src="./assets/images/banner/81234.jpg" alt=""
+                                    class="w-[65px] h-[65px] object-cover rounded-[5px] border-[1px] border-[#C2C2C2]">
+                                <sapn
+                                    class="absolute font_g_book top-[-10px] right-[-10px] h-5 w-5 text-[14px] rounded-full text-center text-[#fff] bg-[#6d6d6d]">
+                                    1
+                                </sapn>
+                            </div>
+                            <div class="product_info mr-[10px]">
+                                <h2 class="product_name font_g_book font-bold text-[14px]">Sport Cable - 2.0m | USB C |
+                                    Lightning
+                                </h2>
+                                <p class="variant font_g_book text-gray-500 text-[12px]">2.0M / Lightning</p>
+                            </div>
+                            <p class="price font_g_book font-bold text-[14px]">
+                                $ <span class="amount">24.95</span>
+                            </p>
+                        </div>
+                        <div class="product my-[12px] flex items-center gap-[15px]">
+                            <div class="relative">
+                                <img src="./assets/images/banner/81234.jpg" alt=""
+                                    class="w-[65px] h-[65px] object-cover rounded-[5px] border-[1px] border-[#C2C2C2]">
+                                <sapn
+                                    class="absolute font_g_book top-[-10px] right-[-10px] h-5 w-5 text-[14px] rounded-full text-center text-[#fff] bg-[#6d6d6d]">
+                                    1
+                                </sapn>
+                            </div>
+                            <div class="product_info mr-[10px]">
+                                <h2 class="product_name font_g_book font-bold text-[14px]">Sport Cable - 2.0m | USB C |
+                                    Lightning
+                                </h2>
+                                <p class="variant font_g_book text-gray-500 text-[12px]">2.0M / Lightning</p>
+                            </div>
+                            <p class="price font_g_book font-bold text-[14px]">
+                                $ <span class="amount">24.95</span>
+                            </p>
+                        </div>
+                        <div class="product my-[12px] flex items-center gap-[15px]">
+                            <div class="relative">
+                                <img src="./assets/images/banner/81234.jpg" alt=""
+                                    class="w-[65px] h-[65px] object-cover rounded-[5px] border-[1px] border-[#C2C2C2]">
+                                <sapn
+                                    class="absolute font_g_book top-[-10px] right-[-10px] h-5 w-5 text-[14px] rounded-full text-center text-[#fff] bg-[#6d6d6d]">
+                                    1
+                                </sapn>
+                            </div>
+                            <div class="product_info mr-[10px]">
+                                <h2 class="product_name font_g_book font-bold text-[14px]">Sport Cable - 2.0m | USB C |
+                                    Lightning
+                                </h2>
+                                <p class="variant font_g_book text-gray-500 text-[12px]">2.0M / Lightning</p>
+                            </div>
+                            <p class="price font_g_book font-bold text-[14px]">
+                                $ <span class="amount">24.95</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cupon border-t-[1px] border-b-[1px] border-[#C2C2C2] py-[20px]">
+                        <form action="" class="newsletter flex gap-[10px]">
+                            <input placeholder="Gift card or discount code"
+                                class="w-full py-[8px] text-[14px] rounded-[3px] border-2 border-gray-200 focus:outline-none focus:border-2 focus:border-black"
+                                type="text" name="company" id="company">
+                            <button type="submit"
+                                class="common_button font_g_book px-[20px] text-[12px] text-[#fff] bg-[#000]">Apply</button>
+                        </form>
+                    </div>
+                    <div class="caculation border-b-[1px] border-[#C2C2C2] py-[20px]">
+                        <div class="flex justify-between items-center mb-[5px]">
+                            <h5 class="font_g_book text-[14px] ">Subtotal</h5>
+                            <h5 class="font_g_book text-[14px] font-bold ">$<span class="amount">345.23</span></h5>
+                        </div>
+                        <div class="flex justify-between items-center mb-[5px]">
+                            <h5 class="font_g_book text-[14px] ">Shipping</h5>
+                            <h5 class="font_g_book text-[12px] font-bold text-[#6d6d6d] ">Calculated at next step</h5>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center my-[20px]">
+                        <h5 class="font_g_book text-[14px] ">Total</h5>
+                        <h5 class="font_g_book text-[20px] font-bold ">$<span class="amount">345.23</span></h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="md:px-[20px] px-[10px] md:py-[70px] py-[40px] pb-[45px] md:mt-[50px] footer">
+        <div class="footer_top pb-[25px] mt-[20px] flex justify-between flex-col-reverse md:flex-row">
+            <div class="footer_menus md:flex gap-[45px] ">
+                <div class="footer_menu ">
+                    <h4 id="menu_title"
+                        class="menu_title footer_menu_title mb-[10px] border-b-[1px] border-[#000] md:border-0 py-[20px] font_g_bold text-[16px] ">
+                        Menu Title</h4>
+                    <ul id="menu_items" class="menu_items 1 hidden md:block">
+                        <li class="menu_item py-[6px] text-[15px] duration-700 ease-in-out">
+                            <a href="" class="">
+                                Item 1
+                            </a>
+                        </li>
+                        <li class="menu_item py-[6px] text-[15px]">
+                            <a href="" class="">
+                                Item 1
+                            </a>
+                        </li>
+                        <li class="menu_item py-[6px] text-[15px]">
+                            <a href="" class="">
+                                Item 1
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_menu ">
+                    <h4 id="menu_title"
+                        class="menu_title footer_menu_title mb-[10px] border-b-[1px] border-[#000] md:border-0 py-[20px] font_g_bold text-[16px] ">
+                        Menu Title</h4>
+                    <ul id="menu_items" class="menu_items 2 hidden md:block">
+                        <li class="menu_item py-[6px] text-[15px] duration-700">
+                            <a href="" class="">
+                                Item 1
+                            </a>
+                        </li>
+                        <li class="menu_item py-[6px] text-[15px]">
+                            <a href="" class="">
+                                Item 1
+                            </a>
+                        </li>
+                        <li class="menu_item py-[6px] text-[15px]">
+                            <a href="" class="">
+                                Item 1
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_form md:my-0 my-[20px]">
+                <p class="mb-[15px] text-[14px] text-center md:text-start ">New products, blog updates, deals, and more.
+                </p>
+                <form action="" class="newsletter flex">
+                    <input class="py-[8px] w-full px-[10px] mr-[5px]" type="email" name="email" id=""
+                        placeholder="Email">
+                    <input class="text-[#fff] font_g_bold text-[14px] pt-[15px] py-[8px] px-[15px] bg-[#000]"
+                        type="submit" value="Subscribe">
+                </form>
+            </div>
+        </div>
+        <div class="footer_middle pb-[20px] md:flex justify-between items-end">
+            <div class="logo w-[200px] hidden md:block">
+                <img src="./assets/images/logo.png" alt="">
+            </div>
+            <div class="middle_right flex justify-between items-end">
+                <ul class=" social_icons order-2 md:order-1 flex gap-[15px]">
+                    <a href="" class="">
+                        <li class=""><i class="fa-brands fa-instagram"></i></li>
+                    </a>
+                    <a href="" class="">
+                        <li class=""><i class="fa-brands fa-facebook-f"></i></li>
+                    </a>
+                    <a href="" class="">
+                        <li class=""><i class="fa-brands fa-twitter"></i></i></li>
+                    </a>
+                </ul>
+                <img class="w-[60px] h-[100px] md:ml-[20px] order-1 md:order-2 " src="./assets/images/certificate.png"
+                    alt="">
+            </div>
+        </div>
+        <div
+            class="footer_bottom md:flex text-center justify-between items-center pt-[20px] pb-[45px] text-gray-500 text-[14px] border-gray-500 border-t-[1px]">
+            <div class="copyright">2023 Nomad® Goods, Inc. All rights reserved.</div>
+            <div class="policy_menu md:mt-0 mt-[20px] ml-[15px] md:ml-0">
+                <nav class="policy_menu">
+                    <ul class="">
+                        <a href="">
+                            <li class="">Manage Cookies</li>
+                        </a>
+                        <a href="">
+                            <li class="">Privecy </li>
+                        </a>
+                        <a href="">
+                            <li class="">Terms</li>
+                        </a>
+                        <a href="">
+                            <li class="">Payment</li>
+                        </a>
+                        <a href="">
+                            <li class="">Accessability</li>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <!-- For Mobile device overlay -->
+    <div id="sidebar_overlay"
+        class="sidebar_overlay bg-gray-900 bg-opacity-50 dark:bg-opacity-80 fixed inset-0 z-[40] transition-all duration-500 hidden">
+    </div>
+
+    <!-- JS File -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="./assets/js/tailwind.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/8cffe8c664.js" crossorigin="anonymous"></script> -->
+    <script src="./assets/js/fontawesome.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
