@@ -502,105 +502,71 @@
                             </li>
                         </ul>
                     </nav>
-                    <div
-                        class="checkout_button rounded-[3px] border-[1px] border-[#ddd] relative mt-[20px] md:px-0 px-[20px]">
-                        <span
-                            class="absolute md:left-[38%]  left-[25%]  md:right-[38%] right-[25%]  top-[-10px] mx-auto text-center bg-[#fff] inline-block mx-auto font_g_book text-[13px]">Express
-                            Checkout</span>
-                        <div
-                            class="button_group grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:sm\:grid-cols-4 gap-[10px] md:p-[20px] py-[20px]">
-                            <div
-                                class="single_button opacity-90 hover:opacity-100 duration-300 bg-[#5a31f4] rounded-[3px]  py-[10px]">
-                                <img class="h-[20px] mx-auto" src="./assets/images/payment/ShopPay_White.svg" alt="">
+                    <div class="shipping_info rounded-[3px] border-[1px] border-[#ddd] mt-[20px] p-[20px]">
+                        <div class="font_g_book text-[14px] flex justify-between items-center gap-[20px]">
+                            <div class="md:flex">
+                                <p class="text-[#737373] md:w-[100px] ">Contact</p>
+                                <p class="">
+                                    heyet76830@vootin.com</p>
                             </div>
-                            <div
-                                class="single_button opacity-90 hover:opacity-100 duration-300 bg-[#fad676] rounded-[3px]  py-[10px]">
-                                <img class="h-[20px] mx-auto" src="./assets/images/payment/Amazon_Pay_logo.svg" alt="">
-                            </div>
-                            <div
-                                class="single_button opacity-90 hover:opacity-100 duration-300 bg-[#ffc439] rounded-[3px]  py-[10px]">
-                                <img class="h-[20px] mx-auto" src="./assets/images/payment/PayPal.svg" alt="">
-                            </div>
-                            <div
-                                class="single_button opacity-90 hover:opacity-100 duration-300 bg-[#000] rounded-[3px]  py-[10px]">
-                                <img class="h-[20px] mx-auto" src="./assets/images/payment/Google_Pay_Logo.svg" alt="">
-                            </div>
+                            <a href="" class="">
+                                <p class="text-[#afafaf] text-[12px] w-1/12 ">Change</p>
+                            </a>
                         </div>
-                    </div>
-                    <div class="flex justify-center items-center gap-[10px] py-[30px]">
-                        <hr class="w-full">
-                        <span class="text-[14px] text-gray-500 font_g_book ">OR</span>
-                        <hr class="w-full">
+                        <hr class="my-[10px]">
+                        <div class="font_g_book text-[14px] flex justify-between items-center gap-[20px]">
+                            <div class="md:flex">
+                                <p class="text-[#737373] md:w-[100px] ">Ship to</p>
+                                <p class="">
+                                    Company, Address 1, Address 2, City VA 23212, United States</p>
+                            </div>
+                            <a href="" class="">
+                                <p class="text-[#afafaf] text-[12px] w-1/12 ">Change</p>
+                            </a>
+                        </div>
                     </div>
                     <!-- shipping address form -->
-                    <form action="" class="shipping_form font_g_book">
+                    <form action="" class="shipping_form font_g_book mt-[40px]">
                         <div class="md:flex justify-between items-end">
-                            <h3 class="font_g_book font-bold text-[18px]">Contact information</h3>
-                            <p class="flex font_g_book text-[14px] gap-[5px] md:mt-0 mt-[10px]">
-                                <span class="text-gray-500">Already have an account?</span>
-                                <a href="">
-                                    Log in
-                                </a>
-                            </p>
+                            <h3 class="font_g_book font-bold text-[18px]">Shipping Method</h3>
                         </div>
-                        <input placeholder="Email"
-                            class="w-full py-[8px]  text-[14px] mt-[25px] mb-[10px] rounded-[3px] border-2 border-gray-200 focus:outline-none focus:border-2 focus:border-black"
-                            required type="email" name="email" id="email">
-                        <div class="flex justify-start items-center">
-                            <label class="ml-[10px] text-[14px] order-2">Email me with news and offers</label>
-                            <input name="" class="rounded-[3px] border-[2px] border-gray-200 order-1" id=""
-                                type="checkbox" value="false">
-                        </div>
-                        <h3 class="font_g_book font-bold text-[18px]  mb-[25px] mt-[30px]">Shipping address</h3>
-                        <input placeholder="Country"
-                            class="w-full py-[8px]  text-[14px] mb-[10px] rounded-[3px] border-2 border-gray-200 focus:outline-none focus:border-2 focus:border-black"
-                            required type="text" name="country" id="country">
-                        <div class="flex gap-[10px]">
-                            <div class="md:w-1/2">
-                                <input placeholder="First Name (optional) "
-                                    class="w-full py-[8px] text-[14px] mb-[10px] rounded-[3px] border-2 border-gray-200 focus:outline-none focus:border-2 focus:border-black"
-                                    type="text" name="fName" id="fName">
+                        <div class="shipping_info rounded-[3px] border-[1px] border-[#ddd] mt-[20px] p-[20px]">
+                            <div class="flex items-center">
+                                <input checked id="default-radio-1" type="radio" value="" name="default-radio"
+                                    class="w-4 h-4 text-[#000] border-gray-300 focus:ring-[#000] focus:ring-8 ">
+                                <label for="default-radio-1"
+                                    class="ml-2 text-[#737373] text-[14px] font_g_book capitalize table-cell w-full">
+                                    <p class="table-cell w-full">Standard Shipping (4-5 Business Days)</p>
+                                    <p class="table-cell">$<span class="ammount">6.95</span>
+                                    </p>
+                                </label>
                             </div>
-                            <div class="md:w-1/2">
-                                <input placeholder="Last Name"
-                                    class="w-full py-[8px] text-[14px] mb-[10px] rounded-[3px] border-2 border-gray-200 focus:outline-none focus:border-2 focus:border-black"
-                                    required type="text" name="lName" id="lName">
+                            <hr class="my-[10px]">
+                            <div class="flex items-center">
+                                <input id="default-radio-1" type="radio" value="" name="default-radio"
+                                    class="w-4 h-4 text-[#000] border-gray-300 focus:ring-[#000] focus:ring-8 ">
+                                <label for="default-radio-1"
+                                    class="ml-2 text-[#737373] text-[14px] font_g_book capitalize table-cell w-full">
+                                    <p class="table-cell w-full"> Expedited Shipping (FedEx) (2-3 Business Days)</p>
+                                    <p class="table-cell">$<span class="ammount">9.95</span>
+                                    </p>
+                                </label>
                             </div>
                         </div>
-                        <input placeholder="Company (optional)"
-                            class="w-full py-[8px] text-[14px] mb-[10px] rounded-[3px] border-2 border-gray-200 focus:outline-none focus:border-2 focus:border-black"
-                            type="text" name="company" id="company">
-                        <input placeholder="Address"
-                            class="w-full py-[8px] text-[14px] mb-[10px] rounded-[3px] border-2 border-gray-200 focus:outline-none focus:border-2 focus:border-black"
-                            required type="text" name="address" id="address">
-                        <input placeholder="Apartment,Suit, etc (optional)"
-                            class="w-full py-[8px] text-[14px] mb-[10px] rounded-[3px] border-2 border-gray-200 focus:outline-none focus:border-2 focus:border-black"
-                            type="text" name="apartment" id="apartment">
-                        <div class="flex gap-[10px]">
-                            <div class="md:w-1/2">
-                                <input placeholder="City"
-                                    class="w-full py-[8px] text-[14px] mb-[10px] rounded-[3px] border-2 border-gray-200 focus:outline-none focus:border-2 focus:border-black"
-                                    required type="text" name="city" id="city">
-                            </div>
-                            <div class="md:w-1/2">
-                                <input placeholder="Post Code"
-                                    class="w-full py-[8px] text-[14px] mb-[10px] rounded-[3px] border-2 border-gray-200 focus:outline-none focus:border-2 focus:border-black"
-                                    required type="text" name="pcode" id="pcode">
-                            </div>
-                        </div>
-                        <input placeholder="phone"
-                            class="w-full py-[8px] text-[14px] mb-[10px] rounded-[3px] border-2 border-gray-200 focus:outline-none focus:border-2 focus:border-black"
-                            required type="text" name="phone" id="phone">
-                        <div class="flex justify-start items-center">
-                            <label class="ml-[10px] text-[14px] order-2">Text me with news and offers</label>
-                            <input name="" class="rounded-[3px] border-[2px] border-gray-200 order-1" id=""
-                                type="checkbox" value="false">
-                        </div>
-                        <div class="flex justify-end">
+                        <p class="text-[#737373] text-[12px] font_g_book mt-[10px]">* Please note that dependent on
+                            location or
+                            stock availability your
+                            order may ship
+                            from the United States or Hong Kong.</p>
+                        <div class="flex md:flex-row flex-col-reverse justify-between items-center">
+                            <a href="" class="">
+                                <p class="text-[14px] "> <i class="text-[14px] fa-solid fa-angle-left"></i> Return
+                                    to
+                                    Information</p>
+                            </a>
                             <button type="submit"
-                                class="w-full rounded-[3px] md:w-2/6 font_aleo py-[20px] px-[20px] text-[14px] text-[#fff] bg-[#000] mt-[20px]  mb-[20px]">Continue
-                                to
-                                Shipping</button>
+                                class="w-full rounded-[3px] md:w-3/6 font_aleo py-[20px] px-[20px] text-[14px] text-[#fff] bg-[#000] mt-[20px]  mb-[20px]">Continue
+                                to Payment Method</button>
                         </div>
                     </form>
                     <hr class="md:mt-[30px] mt-[20px]">
@@ -733,8 +699,11 @@
                             </div>
                             <div class="flex justify-between items-center mb-[5px]">
                                 <h5 class="font_g_book text-[14px] text-[#6d6d6d]">Shipping</h5>
-                                <h5 class="font_g_book text-[12px] font-bold text-[#6d6d6d] ">Calculated at next step
-                                </h5>
+                                <h5 class="font_g_book text-[14px] font-bold ">$<span class="amount">345.23</span></h5>
+                            </div>
+                            <div class="flex justify-between items-center mb-[5px]">
+                                <h5 class="font_g_book text-[14px] text-[#6d6d6d]">Estimated taxes</h5>
+                                <h5 class="font_g_book text-[14px] font-bold ">$<span class="amount">345.23</span></h5>
                             </div>
                         </div>
                         <div class="flex justify-between items-center my-[20px]">
