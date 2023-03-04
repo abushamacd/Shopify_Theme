@@ -232,6 +232,23 @@ for (var i = 0; i < decrementButton.length; i++) {
   });
 }
 
+const orderDetailsExpand = () => {
+  const orderDetailes = document.getElementById("order_details");
+  const showOrder = document.getElementById("show_order");
+  const hideOrder = document.getElementById("hide_order");
+  if (orderDetailes.classList.contains("hidden")) {
+    orderDetailes.classList.remove("hidden");
+    orderDetailes.classList.add("block");
+    hideOrder.classList.remove("hidden");
+    showOrder.classList.add("hidden");
+  } else {
+    orderDetailes.classList.remove("block");
+    orderDetailes.classList.add("hidden");
+    hideOrder.classList.add("hidden");
+    showOrder.classList.remove("hidden");
+  }
+};
+
 // mobile menu
 // var mmButton = document.getElementsByClassName("mm_button");
 // for (var i = 0; i < mmButton.length; i++) {
