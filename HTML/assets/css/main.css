@@ -279,6 +279,24 @@ input:focus {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
+.page_info strong,
+.page_info b,
+.page_info h1,
+.page_info h2,
+.page_info h3,
+.page_info h4,
+.page_info h5,
+.page_info h6 {
+  font-family: "GothamBold";
+  line-height: 1.11;
+  letter-spacing: -0.02em;
+}
+
+.page_info p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 /* Responsive CSS */
 @media screen and (max-width: 991px) {
   .common_button {
