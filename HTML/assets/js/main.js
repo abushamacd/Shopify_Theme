@@ -272,13 +272,116 @@ const rememberFormExpand = () => {
   }
 };
 
-document.getElementById("save_info").onclick = function () {
-  rememberFormExpand();
+const descExpand = () => {
+  const productDesc = document.getElementById("product_desc_top");
+  const showMoreText = document.getElementById("show_More");
+  const showLessText = document.getElementById("show_Less");
+  if (productDesc.classList.contains("h-[100px]")) {
+    productDesc.classList.remove("h-[100px]", "bottom_shadow");
+    showLessText.classList.remove("hidden");
+    showMoreText.classList.add("hidden");
+  } else {
+    productDesc.classList.add("h-[100px]", "bottom_shadow");
+    showLessText.classList.add("hidden");
+    showMoreText.classList.remove("hidden");
+  }
 };
 
-document.getElementById("remember_lable").onclick = function () {
-  rememberFormExpand();
-};
+// document.getElementById("save_info").onclick = function () {
+//   rememberFormExpand();
+// };
+
+// document.getElementById("remember_lable").onclick = function () {
+//   rememberFormExpand();
+// };
+
+// Product Gallary
+const productImage = document.getElementById("product_main_img");
+const productThumb = document.getElementsByClassName("thumbnail_img");
+let activeImages = document.getElementsByClassName("active");
+for (let i = 0; i < productThumb.length; i++) {
+  // productThumb[i].onclick = function () {
+  //   productImage.src = productThumb[i].src;
+  // };
+  productThumb[i].addEventListener("click", function () {
+    console.log(activeImages.length);
+    if (activeImages.length > 0) {
+      activeImages[0].classList.remove("active");
+    }
+    this.classList.add("active");
+    productImage.src = this.src;
+  });
+}
+
+let prev = document.getElementById("prev");
+let next = document.getElementById("next");
+
+prev.addEventListener("click", function () {
+  document.getElementById("product_thumbnails").scrollTop -= 70;
+});
+
+next.addEventListener("click", function () {
+  document.getElementById("product_thumbnails").scrollTop += 70;
+});
+
+let before = document.getElementById("before");
+let after = document.getElementById("after");
+
+before.addEventListener("click", function () {
+  console.log("object");
+  document.getElementById("product_thumbnails").scrollLeft -= 70;
+});
+
+after.addEventListener("click", function () {
+  document.getElementById("product_thumbnails").scrollLeft += 70;
+});
+
+// $(".slider-for").slick({
+//   slidesToShow: 1,
+//   slidesToScroll: 1,
+//   arrows: false,
+//   fade: true,
+//   asNavFor: ".slider-nav",
+// });
+// $(".slider-nav").slick({
+//   slidesToShow: 3,
+//   slidesToScroll: 1,
+//   asNavFor: ".slider-for",
+//   dots: false,
+//   centerMode: true,
+//   focusOnSelect: true,
+//   arrows: true,
+//   // prevArrow: false,
+//   // nextArrow: false,
+//   responsive: [
+//     {
+//       breakpoint: 1024,
+//       settings: {
+//         slidesToShow: 4,
+//         slidesToScroll: 1,
+//         infinite: true,
+//         dots: true,
+//       },
+//     },
+//     {
+//       breakpoint: 600,
+//       settings: {
+//         slidesToShow: 4,
+//         slidesToScroll: 1,
+//       },
+//     },
+//     {
+//       breakpoint: 480,
+//       settings: {
+//         slidesToShow: 4,
+//         slidesToScroll: 1,
+//       },
+//     },
+//     // You can unslick at a given breakpoint now by adding:
+//     // settings: "unslick"
+//     // instead of a settings object
+//   ],
+// });
 
 // mobile menu
 // var mmButton = document.getElementsByClassName("mm_button");

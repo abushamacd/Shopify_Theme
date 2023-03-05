@@ -13,6 +13,14 @@
     <script src="./assets/js/jQueary.js"></script>
     <link rel="stylesheet" href="./assets/css/main.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
+    <!-- Slick -->
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- JS -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+
 
 </head>
 
@@ -464,24 +472,188 @@
     <!-- </header> -->
 
     <!-- main -->
-    <main class="content">
-        <!-- Banner -->
-        <section class="banner md:px-[50px] px-[10px] py-[10px]">
-            <div class="collection_card relative">
-                <div class="about_image relative">
-                    <img class="md:h-[300px] h-[350px] w-full object-cover bg-center"
-                        src="./assets/images/banner/439741.jpg" alt="" class="">
-                </div>
+    <main class="content ">
+        <div class="py-[50px] flex md:flex-row flex-col">
+            <div class="md:w-7/12 mx-[25px] py-[20px] flex md:flex-row flex-col-reverse ">
                 <div
-                    class="collection_info absolute md:top-[50px] top-[130px] left-0 right-0 my-auto text-start text-[#fff] md:p-[50px] p-[15px]">
-                    <div class="">
-                        <h1 class="font_g_bold leading-[1.11] md:text-[60px] text-[36px] text-[#fff] text-center">Cases
+                    class="product_thumbnails_wrapper flex max-w-[300px] mx-auto min-w-[100px] md:w-1/12 flex md:flex-col items-center">
+                    <div id="prev" class="p-2 md:block hidden">
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+                    <div id="before" class="p-2 md:hidden block">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div id="product_thumbnails"
+                        class="product_thumbnails md:h-[350px] md:overflow-hidden md:flex md:flex-col gap-[10px]">
+                        <img src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:best,c_limit,w_720/https://f.shgcdn.com/9ef367f9-c1b8-40c4-aea4-a863bdcda1c8/"
+                            alt="" class="thumbnail_img active">
+                        <img src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:best,c_limit,w_1920/https://f.shgcdn.com/082e4e0f-5cce-4d11-ae8c-1582fbd0333d/"
+                            alt="" class="thumbnail_img">
+                        <img src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:best,c_limit,w_1920/https://f.shgcdn.com/ee9a10eb-23d9-46bf-8e64-36f8ceaae7d5/"
+                            alt="" class="thumbnail_img">
+                        <img src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:best,c_limit,w_720/https://f.shgcdn.com/9ef367f9-c1b8-40c4-aea4-a863bdcda1c8/"
+                            alt="" class="thumbnail_img">
+                        <img src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:best,c_limit,w_1920/https://f.shgcdn.com/082e4e0f-5cce-4d11-ae8c-1582fbd0333d/"
+                            alt="" class="thumbnail_img">
+                        <img src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:best,c_limit,w_1920/https://f.shgcdn.com/ee9a10eb-23d9-46bf-8e64-36f8ceaae7d5/"
+                            alt="" class="thumbnail_img">
+                        <img src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:best,c_limit,w_720/https://f.shgcdn.com/9ef367f9-c1b8-40c4-aea4-a863bdcda1c8/"
+                            alt="" class="thumbnail_img">
+                        <img src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:best,c_limit,w_1920/https://f.shgcdn.com/082e4e0f-5cce-4d11-ae8c-1582fbd0333d/"
+                            alt="" class="thumbnail_img">
+                        <img src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:best,c_limit,w_1920/https://f.shgcdn.com/ee9a10eb-23d9-46bf-8e64-36f8ceaae7d5/"
+                            alt="" class="thumbnail_img">
+                    </div>
+                    <div id="next" class="p-2 md:block hidden">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div id="after" class="p-2 md:hidden block">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="md:w-11/12">
+                    <!-- image -->
+                    <div class="product_image">
+                        <img id="product_main_img"
+                            src="https://res.cloudinary.com/shogun-frontend/image/fetch/f_auto,q_auto:best,c_limit,w_720/https://f.shgcdn.com/9ef367f9-c1b8-40c4-aea4-a863bdcda1c8/"
+                            alt="" class=" md:w-[650px] md:h-[650px] md py-[50px] object-contain">
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="md:w-5/12 hidden_scrollbar md:h-[650px] hover:overflow-auto overflow-hidden">
+                <nav class="catalog_breadcumb px-[30px]">
+                    <ul class="text-[12px] font_g_book">
+                        <a href="">
+                            <li class="inline-block text-[#7f7f7f]">Catalog</li>
+                        </a>
+                        <a href="">
+                            <li class="inline-block font-bold">Device Model</li>
+                        </a>
+                    </ul>
+                </nav>
+                <div class="product_details bg-[#fff] p-[30px] rounded-[4px]">
+                    <h2
+                        class="product_title md:text-[40px] font_g_bold text-[28px] mb-[4px] tracking-[-.02em] leading-[1.11]">
+                        Product Title</h2>
+                    <h5 class="product_subtitle font_g_bold text-[16px] mb-[4px] tracking-[-.02em] leading-[1.11]">
+                        Product Sub Title / Collection Name</h5>
+                    <div class="product_desc font_aleo  pt-[10px] ">
+                        <div id="product_desc_top"
+                            class="richtext product_desc_top bottom_shadow text-[14px] relative h-[100px] overflow-hidden">
+                            <p>Modern Leather Case stylishly elevates the look and feel of your iPhone while offering
+                                rugged protection. Built with full grain, sustainably sourced leather, Modern Leather
+                                Case will patina with time to develop a rich, lustrous finish totally unique to you.
+                            </p>
+                            <ul style="list-style: inside disc;">
+                                <li>Full grain, sustainably sourced leather</li>
+                                <li>Develops a rugged patina</li>
+                                <li>10ft drop protection</li>
+                                <li>MagSafe compatible</li>
+                                <li>Dual lanyard attachment points</li>
+                            </ul>
+                        </div>
+                        <div onclick="descExpand()" class="product_desc_bottom text-[14px] font_aleo mt-[20px]">
+                            <p id="show_More" class="cursor-pointer underline">Show More...</p>
+                            <p id="show_Less" class="cursor-pointer underline hidden">Show Less</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product_variants bg-[#fff] p-[30px] rounded-[4px] mt-[10px]">
+                    <div class="product_variant">
+                        <h4 class="variant_name text-[16px] font_g_bold ">Variant Name</h4>
+                        <div class="variant_body my-[10px]">
+                            <div class="">
+                                <span class="variant">
+                                    <input type="radio" name="size" id="1" checked="checked">
+                                    <label for="1" class="capitalize">varient 1</label>
+                                </span>
+                                <span class="variant">
+                                    <input type="radio" name="size" id="2">
+                                    <label for="2" class="capitalize">varient 2</label>
+                                </span>
+                                <span class="variant">
+                                    <input type="radio" name="size" id="3">
+                                    <label for="3" class="capitalize">varient 3</label>
+                                </span>
+                                <span class="variant">
+                                    <input type="radio" name="size" id="4">
+                                    <label for="4" class="capitalize">varient 4</label>
+                                </span>
+                                <span class="variant">
+                                    <input type="radio" name="size" id="5">
+                                    <label for="5" class="capitalize">varient 5</label>
+                                </span>
+                                <span class="variant">
+                                    <input type="radio" name="size" id="6">
+                                    <label for="6" class="capitalize">varient 6</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_color_variant">
+                        <h4 class="variant_name text-[16px] font_g_bold ">Variant Name</h4>
+                        <div class="variant_body my-[10px]">
+                            <div class="">
+                                <span class="variant">
+                                    <input type="radio" name="color" id="color_1" checked="checked">
+                                    <label for="color_1" class="capitalize before:bg-[#EC1E1E]">varient 1</label>
+                                </span>
+                                <span class="variant">
+                                    <input type="radio" name="color" id="color_2">
+                                    <label for="color_2" class="capitalize before:bg-[#641D1D]">varient 2</label>
+                                </span>
+                                <span class="variant">
+                                    <input type="radio" name="color" id="color_3">
+                                    <label for="color_3" class="capitalize before:bg-[#540202]">varient 3</label>
+                                </span>
+                                <span class="variant">
+                                    <input type="radio" name="color" id="color_4">
+                                    <label for="color_4" class="capitalize before:bg-[#4A088B]">varient 4</label>
+                                </span>
+                                <span class="variant">
+                                    <input type="radio" name="color" id="color_5">
+                                    <label for="color_5" class="capitalize before:bg-[#11088B]">varient 5</label>
+                                </span>
+                                <span class="variant">
+                                    <input type="radio" name="color" id="color_6">
+                                    <label for="color_6" class="capitalize before:bg-[#000]">varient 6</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <p class="md:text-[26px] text-[22px] font_g_bold">$ <span class="amount">45.67</span> </p>
+                    </div>
+                    <button class="common_button w-full text-[#fff] bg-[#000] mt-[20px]">Button text</button>
+                    <div class="recomanded_products px-[20px] bg-[#f3f3f3]">
+                        <div class="product my-[12px] flex items-center md:gap-[15px]">
+                            <div class="w-1/6 md:mr-0 mr-[10px]">
+                                <img src="./assets/images/banner/81234.jpg" alt=""
+                                    class="w-[65px] h-[65px] object-cover rounded-[5px] border-[1px] border-[#C2C2C2]">
+                            </div>
+                            <div class="product_info mr-[10px]  w-4/6">
+                                <h2 class="product_name font_g_book font-bold text-[14px]">Sportv Cable - 2.0m | USB
+                                    C |
+                                    Lightning
+                                </h2>
+                                <div class="flex">
+                                    <p class="variant font_g_book text-gray-500 text-[12px]">2.0M / Lightning</p>
+                                    <div class="price">
+                                        <p class="text-[14px] font_g_bold">$ <span class="amount">45.67</span> </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button
+                                class="common_button py-[8px] text-[14px] text-[#fff] bg-[#000] mt-[20px]">Add</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <button class="common_button text-[#000] bg-[#fff] mt-[20px]">Button text</button>
     </main>
 
     <!-- footer -->
