@@ -287,24 +287,26 @@ const descExpand = () => {
   }
 };
 
-// document.getElementById("save_info").onclick = function () {
-//   rememberFormExpand();
-// };
+const saveInfo = document.getElementById("save_info");
+const rememberLabel = document.getElementById("remember_lable");
+if (saveInfo !== null) {
+  saveInfo.onclick = function () {
+    rememberFormExpand();
+  };
+}
 
-// document.getElementById("remember_lable").onclick = function () {
-//   rememberFormExpand();
-// };
+if (rememberLabel !== null) {
+  rememberLabel.onclick = function () {
+    rememberFormExpand();
+  };
+}
 
 // Product Gallary
 const productImage = document.getElementById("product_main_img");
 const productThumb = document.getElementsByClassName("thumbnail_img");
 let activeImages = document.getElementsByClassName("active");
 for (let i = 0; i < productThumb.length; i++) {
-  // productThumb[i].onclick = function () {
-  //   productImage.src = productThumb[i].src;
-  // };
   productThumb[i].addEventListener("click", function () {
-    console.log(activeImages.length);
     if (activeImages.length > 0) {
       activeImages[0].classList.remove("active");
     }
@@ -316,25 +318,33 @@ for (let i = 0; i < productThumb.length; i++) {
 let prev = document.getElementById("prev");
 let next = document.getElementById("next");
 
-prev.addEventListener("click", function () {
-  document.getElementById("product_thumbnails").scrollTop -= 70;
-});
+if (prev !== null) {
+  prev.addEventListener("click", function () {
+    document.getElementById("product_thumbnails").scrollTop -= 70;
+  });
+}
 
-next.addEventListener("click", function () {
-  document.getElementById("product_thumbnails").scrollTop += 70;
-});
+if (prev !== null) {
+  next.addEventListener("click", function () {
+    document.getElementById("product_thumbnails").scrollTop += 70;
+  });
+}
 
 let before = document.getElementById("before");
 let after = document.getElementById("after");
 
-before.addEventListener("click", function () {
-  console.log("object");
-  document.getElementById("product_thumbnails").scrollLeft -= 70;
-});
+if (prev !== null) {
+  before.addEventListener("click", function () {
+    console.log("object");
+    document.getElementById("product_thumbnails").scrollLeft -= 70;
+  });
+}
 
-after.addEventListener("click", function () {
-  document.getElementById("product_thumbnails").scrollLeft += 70;
-});
+if (prev !== null) {
+  after.addEventListener("click", function () {
+    document.getElementById("product_thumbnails").scrollLeft += 70;
+  });
+}
 
 // $(".slider-for").slick({
 //   slidesToShow: 1,
