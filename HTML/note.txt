@@ -1,0 +1,2 @@
+if want hide any scroll of a div just use this class - hidden_scrollbar
+products page card has means single product card has not price so use index page color variant card. If you do not find search by this comment -  <!--Color Variant Card-->
