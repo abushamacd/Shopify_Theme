@@ -249,6 +249,37 @@ const orderDetailsExpand = () => {
   }
 };
 
+const billingDetailsOpen = () => {
+  const billingDetails = document.getElementById("billing_info");
+  billingDetails.classList.remove("hidden");
+  billingDetails.classList.add("block");
+};
+
+const billingDetailsClose = () => {
+  const billingDetails = document.getElementById("billing_info");
+  billingDetails.classList.remove("block");
+  billingDetails.classList.add("hidden");
+};
+
+const rememberFormExpand = () => {
+  const rememberForm = document.getElementById("remembar_form");
+  if (rememberForm.classList.contains("hidden")) {
+    rememberForm.classList.remove("hidden");
+    rememberForm.classList.add("block");
+  } else {
+    rememberForm.classList.remove("block");
+    rememberForm.classList.add("hidden");
+  }
+};
+
+document.getElementById("save_info").onclick = function () {
+  rememberFormExpand();
+};
+
+document.getElementById("remember_lable").onclick = function () {
+  rememberFormExpand();
+};
+
 // mobile menu
 // var mmButton = document.getElementsByClassName("mm_button");
 // for (var i = 0; i < mmButton.length; i++) {

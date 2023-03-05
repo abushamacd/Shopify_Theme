@@ -505,7 +505,7 @@
                     <div class="shipping_info rounded-[3px] border-[1px] border-[#ddd] mt-[20px] p-[20px]">
                         <div class="font_g_book text-[14px] flex justify-between items-center gap-[20px]">
                             <div class="md:flex">
-                                <p class="text-[#737373] md:w-[100px] ">Contact</p>
+                                <p class="text-[#545454] md:w-[100px] ">Contact</p>
                                 <p class="">
                                     heyet76830@vootin.com</p>
                             </div>
@@ -516,7 +516,7 @@
                         <hr class="my-[10px]">
                         <div class="font_g_book text-[14px] flex justify-between items-center gap-[20px]">
                             <div class="md:flex">
-                                <p class="text-[#737373] md:w-[100px] ">Ship to</p>
+                                <p class="text-[#545454] md:w-[100px] ">Ship to</p>
                                 <p class="">
                                     Company, Address 1, Address 2, City VA 23212, United States</p>
                             </div>
@@ -524,18 +524,31 @@
                                 <p class="text-[#afafaf] text-[12px] w-1/12 ">Change</p>
                             </a>
                         </div>
+                        <hr class="my-[10px]">
+                        <div class="font_g_book text-[14px] flex justify-between items-center gap-[20px]">
+                            <div class="md:flex">
+                                <p class="text-[#545454] md:w-[100px] ">Method</p>
+                                <p class="">
+                                    Standard Shipping (4-5 Business Days)</p>
+                            </div>
+                            <p class="">$<span class="ammount">9.95</span>
+                            </p>
+                        </div>
                     </div>
                     <!-- shipping address form -->
                     <form action="" class="shipping_form font_g_book mt-[40px]">
-                        <div class="md:flex justify-between items-end">
-                            <h3 class="font_g_book font-bold text-[18px]">Shipping Method</h3>
+                        <div class="">
+                            <h3 class="font_g_book font-bold text-[18px]">Payment</h3>
+                            <p class="text-[#545454] text-[14px] mt-[10px]">All transactions are secure and encrypted.
+                            </p>
                         </div>
-                        <div class="shipping_info rounded-[3px] border-[1px] border-[#ddd] mt-[20px] p-[20px]">
+                        <!-- Card Info -->
+                        <div class="card_info rounded-[3px] border-[1px] border-[#ddd] mt-[20px] p-[20px]">
                             <div class="flex items-center">
-                                <input checked id="standard_shipping" type="radio" value="" name="payment_radio"
+                                <input checked id="default-radio-1" type="radio" value="" name="default-radio"
                                     class="w-4 h-4 text-[#000] border-gray-300 focus:ring-[#000] focus:ring-8 ">
-                                <label for="standard_shipping"
-                                    class="ml-2 text-[#737373] text-[14px] font_g_book capitalize table-cell w-full">
+                                <label for="default-radio-1"
+                                    class="ml-2 text-[#545454] text-[14px] font_g_book capitalize table-cell w-full">
                                     <p class="table-cell w-full">Standard Shipping (4-5 Business Days)</p>
                                     <p class="table-cell">$<span class="ammount">6.95</span>
                                     </p>
@@ -543,30 +556,135 @@
                             </div>
                             <hr class="my-[10px]">
                             <div class="flex items-center">
-                                <input id="expedited_shipping" type="radio" value="" name="payment_radio"
+                                <input id="default-radio-1" type="radio" value="" name="default-radio"
                                     class="w-4 h-4 text-[#000] border-gray-300 focus:ring-[#000] focus:ring-8 ">
-                                <label for="expedited_shipping"
-                                    class="ml-2 text-[#737373] text-[14px] font_g_book capitalize table-cell w-full">
+                                <label for="default-radio-1"
+                                    class="ml-2 text-[#545454] text-[14px] font_g_book capitalize table-cell w-full">
                                     <p class="table-cell w-full"> Expedited Shipping (FedEx) (2-3 Business Days)</p>
                                     <p class="table-cell">$<span class="ammount">9.95</span>
                                     </p>
                                 </label>
                             </div>
                         </div>
-                        <p class="text-[#737373] text-[12px] font_g_book mt-[10px]">* Please note that dependent on
-                            location or
-                            stock availability your
-                            order may ship
-                            from the United States or Hong Kong.</p>
+                        <!-- Billing Address -->
+                        <div class="mt-[40px]">
+                            <h3 class="font_g_book font-bold text-[18px]">Billing address</h3>
+                            <p class="text-[#545454] text-[14px] mt-[10px]">Select the address that matches your card or
+                                payment method.
+                            </p>
+                            <div class="shipping_info  rounded-[3px] border-[1px] border-[#ddd] mt-[20px] p-[20px]">
+                                <div onclick="billingDetailsClose()" class="flex items-center">
+                                    <input checked id="shipping_address" type="radio" value="" name="billing_radio"
+                                        class="w-4 h-4 text-[#000] border-gray-300 focus:ring-[#000] focus:ring-8 ">
+                                    <label for="shipping_address"
+                                        class="ml-2 text-[#545454] text-[14px] font_g_book capitalize table-cell w-full">
+                                        <p class="table-cell w-full">Same as shipping address</p>
+                                    </label>
+                                </div>
+                                <hr class="my-[10px]">
+                                <div onclick="billingDetailsOpen()" class="flex items-center">
+                                    <input id="different_address" type="radio" value="" name="billing_radio"
+                                        class="w-4 h-4 text-[#000] border-gray-300 focus:ring-[#000] focus:ring-8 ">
+                                    <label for="different_address"
+                                        class="ml-2 text-[#545454] text-[14px] font_g_book capitalize table-cell w-full">
+                                        <p class="table-cell w-full">Use a different billing address</p>
+                                    </label>
+                                </div>
+
+                            </div>
+                            <div id="billing_info"
+                                class="billing_info hidden bg-[#FAFAFA] p-[20px] border-[1px] border-t-0 flex flex-col gap-4">
+                                <form class="" action="">
+                                    <div class="flex gap-[10px]">
+                                        <div class="md:w-1/2">
+                                            <input placeholder="First Name"
+                                                class="text-[14px] w-full py-[8px] rounded-[3px] border-[1px] border-gray-200 focus:outline-none focus:border-[1px] focus:border-gray-200"
+                                                required type="text" name="fName" id="fName">
+                                        </div>
+                                        <div class="md:w-1/2">
+                                            <input placeholder="Last Name"
+                                                class="text-[14px] w-full py-[8px] rounded-[3px] border-[1px] border-gray-200 focus:outline-none focus:border-[1px] focus:border-gray-200"
+                                                required type="text" name="lName" id="lName">
+                                        </div>
+                                    </div>
+                                    <input placeholder="Company"
+                                        class="w-full text-[14px] py-[8px] rounded-[3px] border-[1px] border-gray-200 focus:outline-none focus:border-[1px] focus:border-gray-200"
+                                        required type="text" name="company" id="company">
+                                    <input placeholder="Address 1"
+                                        class="w-full text-[14px] py-[8px] rounded-[3px] border-[1px] border-gray-200 focus:outline-none focus:border-[1px] focus:border-gray-200"
+                                        required type="text" name="address_1" id="address_1">
+                                    <input placeholder="Address 2"
+                                        class="w-full text-[14px] py-[8px] rounded-[3px] border-[1px] border-gray-200 focus:outline-none focus:border-[1px] focus:border-gray-200"
+                                        required type="text" name="address_2" id="address_2">
+                                    <div class="flex gap-[10px]">
+                                        <div class="md:w-1/2">
+                                            <input placeholder="City"
+                                                class="w-full text-[14px] py-[8px] rounded-[3px] border-[1px] border-gray-200 focus:outline-none focus:border-[1px] focus:border-gray-200"
+                                                required type="text" name="city" id="city">
+                                        </div>
+                                        <div class="md:w-1/2">
+                                            <input placeholder="Country"
+                                                class="w-full text-[14px] py-[8px] rounded-[3px] border-[1px] border-gray-200 focus:outline-none focus:border-[1px] focus:border-gray-200"
+                                                required type="text" name="country" id="country">
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-[10px]">
+                                        <div class="md:w-1/2">
+                                            <input placeholder="Zip"
+                                                class="w-full text-[14px] py-[8px] rounded-[3px] border-[1px] border-gray-200 focus:outline-none focus:border-[1px] focus:border-gray-200"
+                                                required type="text" name="zip" id="zip">
+                                        </div>
+                                        <div class="md:w-1/2">
+                                            <input placeholder="Phone Number"
+                                                class="w-full text-[14px] py-[8px] rounded-[3px] border-[1px] border-gray-200 focus:outline-none focus:border-[1px] focus:border-gray-200"
+                                                required type="text" name="phone" id="phone">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                        <!-- Remember -->
+                        <div class="mt-[40px]">
+                            <h3 class="font_g_book font-bold text-[18px]">Remember me</h3>
+                            <div class="remember_info rounded-[3px] border-[1px] border-[#ddd] mt-[20px] p-[20px]">
+                                <div class="flex justify-start items-center">
+                                    <label id="remember_lable" for="save_info"
+                                        class="ml-[10px] mt-1 text-[14px] order-2 font_aleo ">
+                                        <h4 onclick="rememberFormExpand()">Save my
+                                            information for
+                                            a faster
+                                            checkout</h4>
+                                    </label>
+                                    <input name="" class="rounded-[3px] border-[2px] border-gray-200 order-1"
+                                        id="save_info" type="checkbox" value="false">
+                                </div>
+                            </div>
+                            <div id="remembar_form" class="remembar_form hidden">
+                                <div class="bg-[#FAFAFA] p-[20px] border-[1px] border-t-0">
+                                    <input placeholder="Type your phone number"
+                                        class="md:w-1/2 w-full py-[8px]  text-[14px] mb-[10px] rounded-[3px] border-2 border-gray-200 focus:outline-none focus:border-2 focus:border-black"
+                                        required type="text" name="phone" id="phone">
+                                    <p class="font-light font_aleo text-[#545454] text-[14px] mt-[10px]">
+                                        Next time you check out here or on other stores powered by Shopify, you’ll
+                                        receive a code by text message to securely purchase with Shop Pay.
+                                    </p>
+                                </div>
+                                <p class="text-[#545454] text-[12px] font_aleo mt-[10px]">By continuing, you agree
+                                    to
+                                    Shop Pay’s Privacy Policy (opens a new window) and Terms of Service (opens a new
+                                    window).</p>
+                            </div>
+                        </div>
                         <div class="flex md:flex-row flex-col-reverse justify-between items-center">
                             <a href="" class="">
                                 <p class="text-[14px] "> <i class="text-[14px] fa-solid fa-angle-left"></i> Return
                                     to
-                                    Information</p>
+                                    Shipping</p>
                             </a>
                             <button type="submit"
-                                class="w-full rounded-[3px] md:w-3/6 font_aleo py-[20px] px-[20px] text-[14px] text-[#fff] bg-[#000] mt-[20px]  mb-[20px]">Continue
-                                to Payment Method</button>
+                                class="w-full rounded-[3px] md:w-1/6 font_aleo py-[20px] px-[20px] text-[14px] text-[#fff] bg-[#000] mt-[20px]  mb-[20px]">Pay
+                                Now</button>
                         </div>
                     </form>
                     <hr class="md:mt-[30px] mt-[20px]">
